@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "riovizual/prosandcons",
+  "title": "Pros and Cons",
+  "category": "riovizual",
+  "keywords": [
+    "table",
+    "box",
+    "pros",
+    "cons",
+    "pros and cons",
+    "pros & cons"
+  ],
+  "description": "Highlight the benefits and drawbacks of products or services.",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false,
+    "align": true
+  },
+  "textdomain": "riovizual",
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "boxAlignment": {
+      "type": "string"
+    },
+    "isVerticalOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "isScroll": {
+      "type": "boolean",
+      "default": false
+    },
+    "isSchema": {
+      "type": "boolean",
+      "default": false
+    },
+    "schemaName": {
+      "type": "string",
+      "default": ""
+    },
+    "classes": {
+      "type": "string",
+      "default": ""
+    },
+    "layoutName": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    },
+    "data": {
+      "type": "array",
+      "default": []
+    },
+    "preview": {
+      "type": "boolean",
+      "default": false
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "styles": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./../../editor-script.js"
+}

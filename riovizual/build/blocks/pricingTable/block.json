@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "riovizual/pricingtable",
+  "title": "Pricing Table",
+  "category": "riovizual",
+  "keywords": [
+    "pricing table",
+    "table"
+  ],
+  "description": "Easily compare pricing plans for your products or services.",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false,
+    "align": true
+  },
+  "textdomain": "riovizual",
+  "editorScript": "file:./../../editor-script.js",
+  "viewScript": [
+    "file:./../../equalColumn.js",
+    "rio-viz-pricing-table-scripts"
+  ],
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "hasEqualColumn": {
+      "type": "boolean",
+      "default": false
+    },
+    "tableClasses": {
+      "type": "string",
+      "default": ""
+    },
+    "global": {
+      "type": "object",
+      "default": {}
+    },
+    "data": {
+      "type": "array",
+      "default": []
+    },
+    "priceToggle": {
+      "type": "object",
+      "default": {}
+    },
+    "preview": {
+      "type": "boolean",
+      "default": false
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "styles": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

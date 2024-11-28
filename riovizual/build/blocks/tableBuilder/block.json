@@ -1,0 +1,115 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "riovizual/tablebuilder",
+  "title": "Table Builder",
+  "category": "riovizual",
+  "keywords": [
+    "table",
+    "cell",
+    "data"
+  ],
+  "description": "Create fully customizable and responsive tables with drag-and-drop functionality.",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "customClassName": false,
+    "align": true
+  },
+  "textdomain": "riovizual",
+  "editorScript": "file:./../../editor-script.js",
+  "viewScript": [
+    "file:./../../responsiveTable.js",
+    "rio-viz-res-table-scripts"
+  ],
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "tableAlignment": {
+      "type": "string"
+    },
+    "hasFixedLayout": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasHeader": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasFooter": {
+      "type": "boolean",
+      "default": false
+    },
+    "isScrollOnPc": {
+      "type": "boolean",
+      "default": false
+    },
+    "isScrollOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "isStackedOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableResponsiveTable": {
+      "type": "boolean",
+      "default": false
+    },
+    "useRowAsHeader": {
+      "type": "boolean",
+      "default": false
+    },
+    "stickyType": {
+      "type": "string",
+      "default": "none"
+    },
+    "styleType": {
+      "type": "string",
+      "default": "regular"
+    },
+    "cellBorderType": {
+      "type": "string",
+      "default": "collapse"
+    },
+    "isMergeContent": {
+      "type": "boolean",
+      "default": true
+    },
+    "tableClasses": {
+      "type": "string",
+      "default": ""
+    },
+    "caption": {
+      "type": "string",
+      "source": "html",
+      "selector": "figcaption",
+      "default": ""
+    },
+    "captionPosition": {
+      "type": "string",
+      "default": "bottom"
+    },
+    "global": {
+      "type": "object",
+      "default": {}
+    },
+    "row": {
+      "type": "array",
+      "default": []
+    },
+    "preview": {
+      "type": "boolean",
+      "default": false
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "styles": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}
