@@ -3,7 +3,7 @@ Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.1
 Tested up to: 6.7
-Stable tag: 2.1.3
+Stable tag: 2.1.4
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -257,6 +257,10 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 6. Pros and Cons Block Settings
 
 == Changelog ==
+
+= 2.1.4 - 02 January 2025 =
+* Fixed: Icon reset options in Pros and Cons.
+* Fixed: Display blockControl settings conditionally to fixed index issue in Pros and Cons.
 
 = 2.1.3 - 14 November 2024 =
 * Added: Full Compatibility with the Latest Version of WordPress 6.7
