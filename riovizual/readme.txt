@@ -3,7 +3,7 @@ Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.1
 Tested up to: 6.7
-Stable tag: 2.1.4
+Stable tag: 2.1.5
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -258,7 +258,12 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 
 == Changelog ==
 
-= 2.1.4 - 02 January 2025 =
+= 2.1.5 - 06 February 2025 =
+* Improved: List Element behavior when Copying and Pasting List items, with added support for `Enter` and `Backspace` in Table Builder.
+* Fixed: Custom Cell Style issue in Table Builder.
+* Fixed: Body items alignment issue when icons are hidden in Pros and Cons.
+
+= 2.1.4 - 31 December 2024 =
 * Fixed: Icon reset options in Pros and Cons.
 * Fixed: Display blockControl settings conditionally to fixed index issue in Pros and Cons.
 
