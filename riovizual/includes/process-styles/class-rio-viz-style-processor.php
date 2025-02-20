@@ -99,7 +99,7 @@ class Rio_Viz_Style_Processor {
 				$google_fonts_url = esc_url_raw( add_query_arg( $query_args, 'https://fonts.googleapis.com/css2' ) );
 
 				if ( ! empty( $google_fonts_url ) ) {
-					wp_enqueue_style( 'rv-fonts-' . $post_id . '', $google_fonts_url, array(), null );
+					wp_enqueue_style( 'rv-fonts-' . $post_id . '', $google_fonts_url, array(), RIO_VIZUAL_VERSION );
 				}
 			}
 		}
@@ -116,7 +116,7 @@ class Rio_Viz_Style_Processor {
 		// generate style css
 		if ( ! empty( $this->css ) ) {
 			$handle = 'rv-styles';
-			wp_register_style( $handle, false );
+			wp_register_style( $handle, false, array(), RIO_VIZUAL_VERSION );
 			wp_enqueue_style( $handle );
 			wp_add_inline_style( $handle , $this->css );
 		}
@@ -124,7 +124,7 @@ class Rio_Viz_Style_Processor {
 			$styles = get_post_meta( $post_id, '_rio_vizual_css', true );
 			if( $styles ){
 				$handle = 'rv-styles' . $post_id;
-				wp_register_style( $handle, false );
+				wp_register_style( $handle, false, array(), RIO_VIZUAL_VERSION );
 				wp_enqueue_style( $handle );
 				wp_add_inline_style( $handle, $styles );
 			}
@@ -138,7 +138,7 @@ class Rio_Viz_Style_Processor {
 				'rv-fonts',
 				$fonts_url,
 				array(),
-				null
+				RIO_VIZUAL_VERSION
 			);
 		}else{
 			self::rio_vizual_font_api( $post_id );

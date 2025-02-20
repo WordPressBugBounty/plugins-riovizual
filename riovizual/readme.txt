@@ -3,7 +3,7 @@ Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.1
 Tested up to: 6.7
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -257,6 +257,12 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 6. Pros and Cons Block Settings
 
 == Changelog ==
+
+= 2.1.6 - 20 February 2025 =
+* Added: Hide Caption settings in Table Builder.
+* Improved: Body Items Vertical Alignment in Pros and Cons.
+* Fixed: `Backspace` issue with empty list in List Element in Table Builder.
+* Fixed: Text Decoration in Font style issue of Table Caption in Table Builder.
 
 = 2.1.5 - 06 February 2025 =
 * Improved: List Element behavior when Copying and Pasting List items, with added support for `Enter` and `Backspace` in Table Builder.

@@ -65,7 +65,7 @@ class Rio_Viz_Load_Assets {
 			RIO_VIZUAL_BUILD_URL. '/assets/js/feedback.js',
 			array(),
 			RIO_VIZUAL_VERSION,
-			true
+			false
 		);
 
 		wp_enqueue_style(
@@ -97,7 +97,8 @@ class Rio_Viz_Load_Assets {
 			'riovizual-block-scripts',
 			RIO_VIZUAL_BUILD_URL . '/index.js',
 			array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'lodash' ),
-			RIO_VIZUAL_VERSION
+			RIO_VIZUAL_VERSION,
+			true
 		);
 
 		wp_enqueue_style(

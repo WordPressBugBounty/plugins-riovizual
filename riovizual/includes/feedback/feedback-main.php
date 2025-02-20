@@ -49,8 +49,7 @@ function feedback_html_content(){
                             <div class="other_feedback rv-d-none" id="other_feedback_form">
                                 <input type="text" placeholder="<?php echo esc_attr( __( 'Please share the reason', 'riovizual' ) ); ?>" name="other_feedback" value="" id="rv-other-feedback">
                             </div>
-
-                            <input type="hidden" id="rv-current-version" name="rv-current-version" value="<?php echo esc_attr( RIO_VIZUAL_VERSION ); ?>">
+                            <input type="hidden" id="rv-current-version" name="rv-current-version" value="<?php echo RIO_VIZUAL_VERSION; ?>">
                         </div>
                     </div>
                     <div class="rv-feedback-footer">

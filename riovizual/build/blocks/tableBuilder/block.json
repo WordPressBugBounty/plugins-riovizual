@@ -7,7 +7,11 @@
   "keywords": [
     "table",
     "cell",
-    "data"
+    "data",
+    "builder",
+    "grid",
+    "spreadsheet",
+    "layout"
   ],
   "description": "Create fully customizable and responsive tables with drag-and-drop functionality.",
   "supports": {
@@ -80,6 +84,10 @@
     "tableClasses": {
       "type": "string",
       "default": ""
+    },
+    "hideCaption": {
+      "type": "boolean",
+      "default": false
     },
     "caption": {
       "type": "string",
