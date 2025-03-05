@@ -5,7 +5,7 @@
  * Description:       Drag and drop Gutenberg table blocks plugin for WordPress to easily create customizable, responsive tables that boost engagement and conversions.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           2.1.6
+ * Version:           2.1.7
  * Author:            WPRio
  * Author URI:        https://riovizual.com/
  * License:           GPL-3.0
@@ -18,7 +18,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Defines constent.
-define( 'RIO_VIZUAL_VERSION', '2.1.6' );
+define( 'RIO_VIZUAL_VERSION', '2.1.7' );
 define( 'RIO_VIZUAL_TEXT_DOMAIN', 'riovizual' );
 
 define( 'RIO_VIZUAL_PATH', plugin_dir_path( __FILE__ ) );

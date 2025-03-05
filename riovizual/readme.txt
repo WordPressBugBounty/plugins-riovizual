@@ -1,9 +1,9 @@
 === Table Block by RioVizual - Comparison Table, Pricing Table, and Pros & Cons Box for Gutenberg ===
-Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas
+Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas, nazmulasif
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.1
 Tested up to: 6.7
-Stable tag: 2.1.6
+Stable tag: 2.1.7
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -257,6 +257,11 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 6. Pros and Cons Block Settings
 
 == Changelog ==
+
+= 2.1.7 - 5 March 2025 =
+* Added: Link Color, Padding and Border Support for Features Element in Pricing Table.
+* Improved: `Add New Column` Settings in Pricing Table.
+* Fixed: Style Generation Issues in Hover State.
 
 = 2.1.6 - 20 February 2025 =
 * Added: Hide Caption settings in Table Builder.
