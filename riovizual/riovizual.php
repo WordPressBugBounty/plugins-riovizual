@@ -3,9 +3,9 @@
  * Plugin Name:       RioVizual
  * Plugin URI:        https://riovizual.com/
  * Description:       Drag and drop Gutenberg table blocks plugin for WordPress to easily create customizable, responsive tables that boost engagement and conversions.
- * Requires at least: 6.1
- * Requires PHP:      7.0
- * Version:           2.1.7
+ * Requires at least: 6.4
+ * Requires PHP:      7.4
+ * Version:           2.2.0
  * Author:            WPRio
  * Author URI:        https://riovizual.com/
  * License:           GPL-3.0
@@ -17,8 +17,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
-// Defines constent.
-define( 'RIO_VIZUAL_VERSION', '2.1.7' );
+// Defines constent
+define( 'RIO_VIZUAL_VERSION', '2.2.0' );
 define( 'RIO_VIZUAL_TEXT_DOMAIN', 'riovizual' );
 
 define( 'RIO_VIZUAL_PATH', plugin_dir_path( __FILE__ ) );
@@ -27,7 +27,8 @@ define( 'RIO_VIZUAL_INC_PATH', plugin_dir_path( __FILE__ ) . '/includes' );
 define( 'RIO_VIZUAL_BUILD_DIR', dirname( __FILE__ ) . '/build' );
 define( 'RIO_VIZUAL_BUILD_URL', plugin_dir_url( __FILE__ ) . 'build' );
 
-define( 'RIO_VIZUAL_CORE_URL', plugin_dir_url( __FILE__ ) . 'core' );
+define( 'RIO_VIZUAL_ADMIN_URL', plugin_dir_url( __FILE__ ) . 'admin');
+define( 'RIO_VIZUAL_ASSETS_URL', plugin_dir_url( __FILE__ ) . 'assets');
 
 require_once RIO_VIZUAL_INC_PATH . '/class-rio-viz-init.php';
 
@@ -35,9 +36,13 @@ require_once RIO_VIZUAL_INC_PATH . '/class-rio-viz-init.php';
  * Uninstallation process
  */
 function rio_viz_uninstall() {
-
 	// Delete css from post meta.
 	delete_metadata( 'post', 0, '_rio_vizual_css', '', true );
+
+	// Remove dashboard option if set.
+	if ( get_option( '_rio_vizual_dashboard' ) !== false ) {
+		delete_option( '_rio_vizual_dashboard' );
+	}
 
 	// Delete css and font from option.
 	$all_options = wp_load_alloptions();
@@ -48,8 +53,8 @@ function rio_viz_uninstall() {
 		}
 	}
 }
+
 register_uninstall_hook( __FILE__, 'rio_viz_uninstall' );
 
 // run the init method.
 new Rio_Viz_Init();
-

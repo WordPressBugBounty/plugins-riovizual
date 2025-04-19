@@ -46,6 +46,10 @@
       "type": "boolean",
       "default": false
     },
+    "emptyCells": {
+      "type": "boolean",
+      "default": false
+    },
     "isScrollOnPc": {
       "type": "boolean",
       "default": false

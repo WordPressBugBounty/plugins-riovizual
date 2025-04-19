@@ -61,7 +61,6 @@ function feedback_html_content(){
                 </form>
             </div>
         </div>
-
     <?php
 }
 add_action('admin_footer', 'rio_viz_feedback_modal');

@@ -14,8 +14,8 @@ class Rio_Viz_Style_Processor {
 	 * Constructor
 	 */
 	public function __construct() {
-		add_filter( 'render_block_data', [ $this, 'render_blocks' ] );
-		add_action( 'the_content', [ $this, 'output_styles_in_head' ] );
+		add_filter( 'render_block_data', [ $this, 'render_blocks' ], 10 );
+		add_action( 'the_content', [ $this, 'output_styles_in_head' ], 100 );
 	}
 
 	/**
@@ -32,10 +32,11 @@ class Rio_Viz_Style_Processor {
 			if ( isset( $block['attrs']['styles'] ) ) {
 				$this->css .= $block['attrs']['styles'];
 			}
-			if ( isset( $block['attrs']['fontFamily']) ) {
+			if ( isset( $block['attrs']['fontFamily'] ) ) {
 				$this->fonts .= $block['attrs']['fontFamily'] ? $block['attrs']['fontFamily'].'&' : '';
 			}
 		}
+		
 		return $block;
 	}
 
@@ -106,7 +107,11 @@ class Rio_Viz_Style_Processor {
 	}
 
 	/**
-	 * @return void
+	 * Generate style CSS
+	 *
+	 * @param  mixed  $content   The content to add styles for.
+	 *
+	 * @return string|null
 	 */
 	public function output_styles_in_head($content) {
 
@@ -133,12 +138,13 @@ class Rio_Viz_Style_Processor {
 		// generate google fonts link
 		if ( ! empty( $this->fonts ) ) {
 
-			$fonts_url = 'https://fonts.googleapis.com/css2?'. esc_html($this->fonts) . 'display=swap';
+			$fonts_url = 'https://fonts.googleapis.com/css2?'. $this->fonts . 'display=swap';
+			
 			wp_enqueue_style(
 				'rv-fonts',
-				$fonts_url,
+				esc_url_raw( $fonts_url ),
 				array(),
-				RIO_VIZUAL_VERSION
+				null 
 			);
 		}else{
 			self::rio_vizual_font_api( $post_id );

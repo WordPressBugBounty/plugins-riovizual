@@ -1,7 +1,6 @@
 <?php 
 
 // deactive plugin after taking feedback
-
 function rio_viz_feedback_deactivate_plugin_callback() {
     if (current_user_can('activate_plugins')) {
         $plugin_file = 'riovizual/riovizual.php';

@@ -47,6 +47,14 @@
       "type": "object",
       "default": {}
     },
+    "tooltip": {
+      "type": "object",
+      "default": {}
+    },
+    "slider": {
+      "type": "object",
+      "default": {}
+    },
     "preview": {
       "type": "boolean",
       "default": false

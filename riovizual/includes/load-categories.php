@@ -1,12 +1,5 @@
 <?php
 /**
- * Load blocks for rio vizual
- *
- * @since   1.0.0
- * @package riovizual
- */
-
-/**
  * Add a block category if it doesn't exist already.
  *
  * @param array $categories Array of block categories.

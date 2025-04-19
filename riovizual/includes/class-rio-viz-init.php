@@ -5,10 +5,6 @@
  * @since   1.0.0
  * @package riovizual
  */
-
-/**
- * Initialize
- */
 class Rio_Viz_Init {
 
 	/**
@@ -43,6 +39,10 @@ class Rio_Viz_Init {
 		require_once RIO_VIZUAL_INC_PATH . '/feedback/feedback-main.php';
 
 		require_once RIO_VIZUAL_INC_PATH . '/deactive_plugin.php';
+
+		require_once RIO_VIZUAL_INC_PATH . '/notice.php';
+
+		require_once RIO_VIZUAL_PATH . '/admin/admin.php';
 	}
 
 	/**
@@ -74,4 +74,3 @@ class Rio_Viz_Init {
 		new Rio_Viz_Style_Processor();
 	}
 }
-
