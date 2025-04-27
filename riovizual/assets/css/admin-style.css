@@ -1,0 +1,7 @@
+#toplevel_page_riovizual.wp-menu-open ul.wp-submenu li:has( > a[href*="pricing"]){background-color: #00A32A;}
+#toplevel_page_riovizual.wp-menu-open ul.wp-submenu li:has( > a[href*="pricing"]):hover{background-color: #008000;}
+#toplevel_page_riovizual.wp-menu-open ul.wp-submenu li:has( > a[href*="pricing"]) a{color: #fff;font-size: 13px;line-height: 1.4;font-weight: 500;}
+
+.rv_noti_dismiss_btn{position: absolute;top: 10px;right: 10px;text-decoration: none;display: inline-block;}
+.rv_noti_dismiss_btn span{font-size: 16px;color: #787c82;}
+

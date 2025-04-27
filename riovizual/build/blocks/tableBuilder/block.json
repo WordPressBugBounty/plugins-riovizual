@@ -14,7 +14,7 @@
     "spreadsheet",
     "layout"
   ],
-  "description": "Create fully customizable and responsive tables with drag-and-drop functionality.",
+  "description": "Create responsive tables with drag-and-drop functionality.",
   "supports": {
     "html": false,
     "anchor": false,

@@ -7,19 +7,25 @@
  */
 class Admin {
 
+    private $menu_slug = 'riovizual';
     /**
      * Constructor
      */
     public function __construct() {
         add_action('admin_menu', [$this, 'register_admin_menus']);
+        add_action('admin_menu', [$this, 'highlight_submenu'], 999); // Add submenu highlight fix
         add_action('admin_enqueue_scripts', [$this, 'enqueue_dashboard_assets']);
         add_action('rest_api_init', [$this, 'register_rest_routes']);
+        add_action('admin_head', [$this, 'hide_admin_notification']);
+        add_action('admin_init', [$this, 'riovizual_redirect_after_activation'] );
     }
 
     /**
      * Define RioVizual Admin Dashboard Menus
      */
     public function register_admin_menus() {
+
+        $menu_slug  = $this->menu_slug;
         $capability = 'manage_options';
         $icon = esc_url('https://riovizual.com/wp-content/uploads/2024/04/rv_dashboard-icon.png');
 
@@ -29,20 +35,79 @@ class Admin {
             esc_html__('RioVizual', 'riovizual'),
             esc_html__('RioVizual', 'riovizual'),
             $capability,
-            'riovizual',
+            $menu_slug,
             [$this, 'render_dashboard_page'],
             $icon,
             26
         );
 
-        add_submenu_page('riovizual',
-            esc_html__('Dashboard', 'riovizual'), esc_html__('Dashboard', 'riovizual'), $capability, 'riovizual', [$this, 'render_dashboard_page']);
-            add_submenu_page('riovizual', esc_html__('Blocks', 'riovizual'), esc_html__('Blocks', 'riovizual'), $capability, 'riovizual-blocks', [$this, 'render_dashboard_page']);
+        add_submenu_page(
+            $menu_slug,
+            esc_html__('RioVizual', 'riovizual'),
+            esc_html__('Dashboard', 'riovizual'),
+            $capability,
+            $menu_slug,
+            [$this, 'render_dashboard_page']
+        );
+
+        add_submenu_page(
+            $menu_slug,
+            esc_html__('RioVizual', 'riovizual'),
+            esc_html__('Blocks', 'riovizual'),
+            $capability,
+            $menu_slug . '&path=blocks',
+            [$this, 'render_dashboard_page']
+        );
 
         if ($pro_active) {
-            add_submenu_page('riovizual', esc_html__('License', 'riovizual'), esc_html__('License', 'riovizual'), $capability, 'riovizual-license', [$this, 'render_dashboard_page']);
-        } else {
-            add_submenu_page('riovizual', esc_html__('Free vs Pro', 'riovizual'), esc_html__('Free vs Pro', 'riovizual'), $capability, 'riovizual-freeVsPro', [$this, 'render_dashboard_page']);
+            add_submenu_page(
+                $menu_slug,
+                esc_html__('RioVizual', 'riovizual'),
+                esc_html__('License', 'riovizual'),
+                $capability,
+                $menu_slug . '&path=license',
+                [$this, 'render_dashboard_page']
+            );
+        }
+        else {
+            add_submenu_page(
+                $menu_slug,
+                esc_html__('RioVizual', 'riovizual'),
+                esc_html__('Free vs Pro', 'riovizual'),
+                $capability,
+                $menu_slug . '&path=freeVsPro',
+                [$this, 'render_dashboard_page']
+            );
+
+            // Upgrade to pro button
+            add_submenu_page(
+                $menu_slug,
+                esc_html__('RioVizual', 'riovizual'),
+                esc_html__('Get Riovizual Pro', 'riovizual'),
+                $capability,
+                'https://riovizual.com/pricing/',
+                ''
+            );
+        }
+    }
+
+    /**
+     * Ensure the correct submenu is highlighted in admin
+     */
+    public function highlight_submenu() {
+        global $submenu_file, $parent_file;
+
+        $menu_slug = $this->menu_slug;
+
+        if (isset($_GET['page']) && strpos($_GET['page'], $menu_slug) === 0) {
+            $parent_file = $menu_slug;
+
+            // If `path` is set, match submenu accordingly
+            if (isset($_GET['path'])) {
+                $submenu_file = $menu_slug . '&path=' . sanitize_key($_GET['path']);
+            } else {
+                $submenu_file = $menu_slug;
+            }
         }
     }
 
@@ -50,24 +115,9 @@ class Admin {
      * Enqueue Dashboard Scripts and Styles
      */
     public function enqueue_dashboard_assets() {
-        wp_enqueue_script(
-            'riodashboard-script',
-            esc_url(RIO_VIZUAL_ADMIN_URL . '/dashboard/dashboard.js'),
-            ['react', 'react-dom', 'wp-element', 'wp-components', 'wp-api-fetch'],
-            esc_attr(RIO_VIZUAL_VERSION),
-            true
-        );
-
-        wp_enqueue_style(
-            'riodashboard-style',
-            esc_url(RIO_VIZUAL_ADMIN_URL . '/dashboard/dashboard.css'),
-            [],
-            esc_attr(RIO_VIZUAL_VERSION)
-        );
 
         $localized_data = [
             'dashboardData' => get_option('_rio_vizual_dashboard'),
-			'adminUrl'		=> admin_url(),
             'version'       => esc_attr(RIO_VIZUAL_VERSION),
             'nonce'         => wp_create_nonce('wp_rest'),
             'isActive'      => $this->is_pro_active()
@@ -83,7 +133,25 @@ class Admin {
             $localized_data['username'] = esc_html($current_user->user_login);
         }
 
+        wp_enqueue_script(
+            'riodashboard-script',
+            esc_url(RIO_VIZUAL_ADMIN_URL . '/dashboard/dashboard.js'),
+            ['react', 'react-dom', 'wp-element', 'wp-components', 'wp-api-fetch'],
+            esc_attr(RIO_VIZUAL_VERSION),
+            true
+        );
+
         wp_localize_script('riodashboard-script', 'rv_dashboard_data', $localized_data);
+
+        // Check for the specific page
+        if (isset($_GET['page']) && $_GET['page'] === 'riovizual') {
+            wp_enqueue_style(
+				'riodashboard-style',
+				esc_url(RIO_VIZUAL_ADMIN_URL . '/dashboard/dashboard.css'),
+				[],
+				esc_attr(RIO_VIZUAL_VERSION)
+			);
+        }
     }
 
     /**
@@ -129,6 +197,30 @@ class Admin {
      */
     private function is_pro_active() {
         return function_exists('is_plugin_active') && is_plugin_active('riovizual-pro/riovizual-pro.php');
+    }
+
+	/**
+     * Hide admin notification
+     */
+    public function hide_admin_notification() {
+        if (isset($_GET['page']) && strpos($_GET['page'], 'riovizual') === 0) {
+			remove_all_actions('admin_notices');
+			remove_all_actions('all_admin_notices');
+		}
+    }
+
+    /**
+     * Redirect to Dashboard on first time installation
+     * */
+	public function riovizual_redirect_after_activation() {
+        if (get_option('_rio_vizual_redirect_on_activation')) {
+            delete_option('_rio_vizual_redirect_on_activation');
+
+            if (is_admin() && current_user_can('manage_options')) {
+                wp_safe_redirect(admin_url('admin.php?page=riovizual'));
+                exit;
+            }
+        }
     }
 }
 

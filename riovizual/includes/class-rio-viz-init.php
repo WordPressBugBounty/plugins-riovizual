@@ -42,6 +42,8 @@ class Rio_Viz_Init {
 
 		require_once RIO_VIZUAL_INC_PATH . '/notice.php';
 
+		require_once RIO_VIZUAL_INC_PATH . '/notice/review-notice.php';
+
 		require_once RIO_VIZUAL_PATH . '/admin/admin.php';
 	}
 

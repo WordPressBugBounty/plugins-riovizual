@@ -21,6 +21,8 @@ class Rio_Viz_Load_Assets {
 		add_action( 'enqueue_block_assets', function() { $this->rio_blocks_assets(); } );
 		// Blocks: styles and scripts for admin.
 		add_action( 'enqueue_block_editor_assets', function() { $this->rio_blocks_editor_assets(); } );
+
+		add_action( 'admin_enqueue_scripts', function() { $this->riovizual_admin_style(); } );
 	}
 
 	/**
@@ -30,6 +32,10 @@ class Rio_Viz_Load_Assets {
 	 */
 	public function scripts() {
 		wp_register_script( 'rio-viz-pricing-table-scripts', RIO_VIZUAL_BUILD_URL . '/pricing-table.js', array('lodash'), RIO_VIZUAL_VERSION, true );
+	}
+
+	public function riovizual_admin_style(){
+		wp_enqueue_style( 'riovizual-admin-style', RIO_VIZUAL_ASSETS_URL. '/css/admin-style.css', array(), RIO_VIZUAL_VERSION );
 	}
 
 	/**

@@ -3,7 +3,7 @@ Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas, nazmulasif
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.4
 Tested up to: 6.8
-Stable tag: 2.2.0
+Stable tag: 2.2.1
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -279,6 +279,13 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 6. Pros and Cons Block Settings
 
 == Changelog ==
+
+= 2.2.1 - 27 April 2025 =
+* Added: .pot file for Language Support.
+* Improved: UI of Demo Import Section
+* Improved: Inspector Control Main Tab Design.
+* Moved: 'Reset Styles' option to Advanced -> Reset Styles.
+* Drop: Device State Manager from Inspector Control, Added to Inspector Control Main Tab.
 
 = 2.2.0 - 19 April 2025 =
 * Introduced: Plugin Dashboard.
