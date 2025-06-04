@@ -2,27 +2,23 @@
 # This file is distributed under the GPL-3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: RioVizual 2.2.0\n"
+"Project-Id-Version: RioVizual 2.2.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/riovizual\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-24T11:09:04+00:00\n"
+"POT-Creation-Date: 2025-06-03T10:29:06+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: riovizual\n"
 
 #. Plugin Name of the plugin
 #: riovizual.php
-#: admin/admin.php:35
-#: admin/admin.php:36
-#: admin/admin.php:46
-#: admin/admin.php:55
-#: admin/admin.php:65
-#: admin/admin.php:75
-#: admin/admin.php:85
+#: admin/Admin.php:39
+#: admin/Admin.php:40
+#: admin/Admin.php:102
 msgid "RioVizual"
 msgstr ""
 
@@ -42,136 +38,230 @@ msgstr ""
 msgid "WPRio"
 msgstr ""
 
-#: admin/admin.php:47
+#: admin/Admin.php:49
+#: admin/Admin.php:50
 #: admin/dashboard/dashboard.js:1
-#: dashboard/pages/common/Header.js:49
+#: dashboard/components/template/Header.js:57
 msgid "Dashboard"
 msgstr ""
 
-#: admin/admin.php:56
+#: admin/Admin.php:57
+#: admin/Admin.php:58
 #: admin/dashboard/dashboard.js:1
-#: dashboard/pages/common/Header.js:50
+#: dashboard/components/template/Header.js:58
 msgid "Blocks"
 msgstr ""
 
-#: admin/admin.php:66
+#: admin/Admin.php:65
+#: admin/Admin.php:66
+#: admin/Admin.php:74
 #: admin/dashboard/dashboard.js:1
-#: dashboard/pages/common/Header.js:52
+#: dashboard/components/template/Header.js:59
+msgid "Tables"
+msgstr ""
+
+#: admin/Admin.php:73
+#: includes/PostTypes/TablesList.php:82
+msgid "Riovizual Tables"
+msgstr ""
+
+#: admin/Admin.php:83
+#: admin/Admin.php:84
+#: admin/dashboard/dashboard.js:1
+#: dashboard/components/template/Header.js:61
 msgid "License"
 msgstr ""
 
-#: admin/admin.php:76
+#: admin/Admin.php:92
+#: admin/Admin.php:93
 #: admin/dashboard/dashboard.js:1
-#: dashboard/pages/common/Header.js:53
+#: dashboard/components/template/Header.js:62
 msgid "Free vs Pro"
 msgstr ""
 
-#: admin/admin.php:86
+#: admin/Admin.php:103
 msgid "Get Riovizual Pro"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:10
+#: includes/Blocks/Blocks.php:48
+#: includes/Extensions/PageBuilders/Bricks/Settings.php:29
+#: includes/Extensions/PageBuilders/Bricks/Widget.php:37
+#: includes/Extensions/PageBuilders/Divi/Module.php:20
+#: includes/Extensions/PageBuilders/Elementor/Widget.php:30
+#: includes/Extensions/PageBuilders/Elementor/Widget.php:62
+#: includes/Extensions/PageBuilders/Oxygen/elements/class-oxyel-riovizual-table.php:28
+msgid "Riovizual"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/BeaverBuilder/includes/frontend.php:19
+#: includes/Extensions/PageBuilders/Elementor/Widget.php:113
+msgid "Please select the table."
+msgstr ""
+
+#: includes/Extensions/PageBuilders/BeaverBuilder/Module.php:13
+msgid "Riovizual Table Builder"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/BeaverBuilder/Module.php:14
+msgid "Displays a Riovizual table."
+msgstr ""
+
+#: includes/Extensions/PageBuilders/BeaverBuilder/Module.php:41
+msgid "No table selected."
+msgstr ""
+
+#: includes/Extensions/PageBuilders/BeaverBuilder/Module.php:49
+msgid "General"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/BeaverBuilder/Module.php:52
+msgid "Table Selection"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/BeaverBuilder/Module.php:57
+#: includes/Extensions/PageBuilders/Elementor/Widget.php:70
+#: includes/Extensions/PageBuilders/Oxygen/elements/class-oxyel-riovizual-table.php:47
+msgid "Select a Table"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Bricks/Widget.php:55
+#: build/index.js:1
+#: src/blocks/tableBuilder/inspector/style/index.js:67
+msgid "Table"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Bricks/Widget.php:59
+msgid "Select Table"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Bricks/Widget.php:64
+msgid "<div class=\"rv-raw-element\"><label>Create a new table</label><a href=\""
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Bricks/Widget.php:77
+msgid "Please select a table."
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Divi/Module.php:27
+msgid "Available Tables"
+msgstr ""
+
+#. translators: %s is the URL to create a new table in the admin area.
+#: includes/Extensions/PageBuilders/Divi/Module.php:34
+msgid "Select a table from the dropdown. You can also <a href=\"%s\" target=\"_blank\">create a new table here</a>."
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Divi/Settings.php:36
+msgid "RioVizual is the most versatile WordPress table plugin designed for creating comparison tables, pricing tables, and pros & cons boxes directly in the Gutenberg block editor."
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Divi/Settings.php:42
+#: build/index.js:1
+#: src/common/blockPlaceholder/layout/index.js:120
+msgid "Create New"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Elementor/Widget.php:79
+#: includes/Extensions/PageBuilders/Oxygen/elements/class-oxyel-riovizual-table.php:54
+#: includes/PostTypes/TablesList.php:83
+msgid "Create New Table"
+msgstr ""
+
+#: includes/Extensions/PageBuilders/Elementor/Widget.php:82
+msgid "Create Table"
+msgstr ""
+
+#: includes/Feedback/Feedback.php:32
 msgid "Quick Feedback"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:13
+#: includes/Feedback/Feedback.php:35
 msgid "If you have a moment, please let us know why you are deactivating Riovizual:"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:17
+#: includes/Feedback/Feedback.php:39
 msgid "I no longer need the plugin"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:21
+#: includes/Feedback/Feedback.php:43
 msgid "I only needed the plugin for a short period"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:25
+#: includes/Feedback/Feedback.php:47
 msgid "The plugin broke my site"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:29
+#: includes/Feedback/Feedback.php:51
 msgid "I couldn't get the plugin to work"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:34
+#: includes/Feedback/Feedback.php:56
 msgid "I found a better plugin"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:37
+#: includes/Feedback/Feedback.php:59
 msgid "Please share which plugin"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:42
+#: includes/Feedback/Feedback.php:64
 msgid "It's a temporary deactivation"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:47
+#: includes/Feedback/Feedback.php:69
 msgid "Other"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:50
+#: includes/Feedback/Feedback.php:72
 msgid "Please share the reason"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:57
+#: includes/Feedback/Feedback.php:79
 msgid "Skip & Deactivate"
 msgstr ""
 
-#: includes/feedback/feedback-main.php:58
+#: includes/Feedback/Feedback.php:80
 #: build/index.js:1
 #: src/common/modalReset/index.js:48
 msgid "Cancel"
 msgstr ""
 
-#: includes/load-categories.php:16
-msgid "Riovizual"
+#: includes/PostTypes/Table.php:54
+msgid "Name"
 msgstr ""
 
-#: includes/notice/review-notice.php:62
-msgid "Enjoying RioVizual?"
+#: includes/PostTypes/Table.php:62
+#: build/index.js:1
+#: src/blocks/tableBuilder/inspector/general/content/elementContent.js:76
+#: src/blocks/tableBuilder/utils/state.js:99
+msgid "Shortcode"
 msgstr ""
 
-#: includes/notice/review-notice.php:62
-msgid "Let the WordPress community know with a quick review — it only takes a minute!"
+#: includes/PostTypes/TablesList.php:107
+msgid "Search Tables"
 msgstr ""
 
-#: includes/notice/review-notice.php:64
-msgid "Leave a 5-Star Review"
+#. translators: %s is the number of items moved to Trash.
+#: includes/PostTypes/TablesList.php:216
+msgid "%s item(s) moved to Trash."
 msgstr ""
 
-#: includes/notice/review-notice.php:65
-#: includes/notice/review-notice.php:85
-msgid "Remind Me Later"
+#. translators: %s is the number of items permanently deleted.
+#: includes/PostTypes/TablesList.php:221
+msgid "%s item(s) permanently deleted."
 msgstr ""
 
-#: includes/notice/review-notice.php:66
-msgid "I Already Did"
-msgstr ""
-
-#: includes/notice/review-notice.php:82
-msgid "Go beyond the basics with RioVizual Pro"
-msgstr ""
-
-#: includes/notice/review-notice.php:82
-msgid "unlock advanced blocks, exclusive layouts, powerful customization, enhanced features, and priority support to level up your tables."
-msgstr ""
-
-#: includes/notice/review-notice.php:84
-msgid "Upgrade to RioVizual Pro"
-msgstr ""
-
-#: includes/notice/review-notice.php:86
-msgid "Dismiss"
+#. translators: %s is the number of items restored from Trash.
+#: includes/PostTypes/TablesList.php:226
+msgid "%s item(s) restored."
 msgstr ""
 
 #: admin/dashboard/dashboard.js:1
-#: dashboard/pages/common/Header.js:62
+#: dashboard/components/template/Header.js:75
 msgid "rio vizual logo"
 msgstr ""
 
 #: admin/dashboard/dashboard.js:1
-#: dashboard/pages/common/Header.js:85
+#: dashboard/components/template/Header.js:98
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -278,17 +368,17 @@ msgstr ""
 
 #: build/index.js:1
 #: src/component/advanced-settings/Font/controls/fontControl.js:115
-msgid "Family"
+msgid "Font Family"
 msgstr ""
 
 #: build/index.js:1
 #: src/component/advanced-settings/Font/controls/fontControl.js:133
-msgid "Weight"
+msgid "Font Weight"
 msgstr ""
 
 #: build/index.js:1
 #: src/component/advanced-settings/Font/index.js:167
-msgid "Decoration"
+msgid "Text Decoration"
 msgstr ""
 
 #: build/index.js:1
@@ -322,57 +412,57 @@ msgid "Alt Text"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/iconContent.js:38
-#: src/common/draggableList/advancedList.js:68
+#: src/blocks-element/elements/inspector/content/iconContent.js:39
+#: src/common/draggableList/advancedList.js:70
 msgid "Select Icon"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/draggableList/advancedList.js:80
+#: src/common/draggableList/advancedList.js:83
 msgid "Icon Color"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/draggableList/advancedList.js:125
+#: src/common/draggableList/advancedList.js:128
 msgid "Badge Color"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/draggableList/advancedList.js:134
+#: src/common/draggableList/advancedList.js:137
 msgid "Badge Background"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/draggableList/advancedList.js:93
+#: src/common/draggableList/advancedList.js:96
 msgid "Set as Default"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/draggableList/advancedList.js:106
+#: src/common/draggableList/advancedList.js:109
 msgid "Text Opacity"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/prosAndCons/box/contextMenu/index.js:43
 #: src/blocks/prosAndCons/inspector/general/body/content.js:200
-#: src/common/draggableList/index.js:272
+#: src/common/draggableList/index.js:275
 msgid "Duplicate"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/prosAndCons/box/contextMenu/index.js:89
 #: src/blocks/prosAndCons/inspector/general/body/content.js:201
-#: src/common/draggableList/index.js:273
+#: src/common/draggableList/index.js:276
 msgid "Delete"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/draggableList/index.js:331
+#: src/common/draggableList/index.js:342
 msgid "Add New"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/textContent.js:20
+#: src/blocks-element/elements/inspector/content/textContent.js:21
 #: src/blocks/tableBuilder/utils/state.js:74
 msgid "Text"
 msgstr ""
@@ -392,12 +482,6 @@ msgstr ""
 #: src/blocks-element/elements/inspector/style/listElement/index.js:44
 #: src/blocks/tableBuilder/utils/state.js:94
 msgid "Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/content/elementContent.js:67
-#: src/blocks/tableBuilder/utils/state.js:99
-msgid "Shortcode"
 msgstr ""
 
 #: build/index.js:1
@@ -495,7 +579,7 @@ msgid "Upload"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/default/listElem.js:114
+#: src/blocks-element/elements/default/listElem.js:122
 msgid "List item"
 msgstr ""
 
@@ -630,51 +714,51 @@ msgid "Convert to Footer Section"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/textContent.js:32
+#: src/blocks-element/elements/inspector/content/textContent.js:33
 msgid "Content Tag"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/imageContent.js:38
+#: src/blocks-element/elements/inspector/content/imageContent.js:39
 msgid "Link URL"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks-element/elements/inspector/content/advancedButtonContent/attributesContent.js:22
-#: src/blocks-element/elements/inspector/content/buttonContent.js:59
-#: src/blocks-element/elements/inspector/content/iconContent.js:56
-#: src/blocks-element/elements/inspector/content/imageContent.js:48
+#: src/blocks-element/elements/inspector/content/buttonContent.js:60
+#: src/blocks-element/elements/inspector/content/iconContent.js:57
+#: src/blocks-element/elements/inspector/content/imageContent.js:49
 msgid "Open in New Tab"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/buttonContent.js:72
-#: src/blocks-element/elements/inspector/content/iconContent.js:72
-#: src/blocks-element/elements/inspector/content/imageContent.js:61
+#: src/blocks-element/elements/inspector/content/buttonContent.js:73
+#: src/blocks-element/elements/inspector/content/iconContent.js:73
+#: src/blocks-element/elements/inspector/content/imageContent.js:62
 msgid "Add Nofollow to Link"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks-element/elements/inspector/content/advancedButtonContent/buttonContent.js:22
-#: src/blocks-element/elements/inspector/content/buttonContent.js:38
+#: src/blocks-element/elements/inspector/content/buttonContent.js:39
 msgid "Button Text"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/buttonContent.js:41
+#: src/blocks-element/elements/inspector/content/buttonContent.js:42
 msgid "Add Text"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks-element/elements/inspector/content/advancedButtonContent/buttonContent.js:37
-#: src/blocks-element/elements/inspector/content/buttonContent.js:48
-#: src/blocks-element/elements/inspector/content/iconContent.js:46
+#: src/blocks-element/elements/inspector/content/buttonContent.js:49
+#: src/blocks-element/elements/inspector/content/iconContent.js:47
 msgid "Add URL"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks-element/elements/inspector/content/advancedButtonContent/attributesContent.js:50
-#: src/blocks-element/elements/inspector/content/buttonContent.js:87
+#: src/blocks-element/elements/inspector/content/buttonContent.js:88
 msgid "Enable Auto Text Break"
 msgstr ""
 
@@ -684,62 +768,62 @@ msgid "Caption Text"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:71
+#: src/blocks/tableBuilder/inspector/general/table/index.js:76
 msgid "Equal Cells Width"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:84
+#: src/blocks/tableBuilder/inspector/general/table/index.js:89
 msgid "Convert First Row to Header"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:98
+#: src/blocks/tableBuilder/inspector/general/table/index.js:103
 msgid "Convert Last Row to Footer"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:126
+#: src/blocks/tableBuilder/inspector/general/table/index.js:131
 msgid "Hide Caption"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:138
+#: src/blocks/tableBuilder/inspector/general/table/index.js:143
 msgid "Show Scrollbar"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:143
+#: src/blocks/tableBuilder/inspector/general/table/index.js:148
 msgid "On Large Devices"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:156
+#: src/blocks/tableBuilder/inspector/general/table/index.js:161
 msgid "On Small Devices"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:171
+#: src/blocks/tableBuilder/inspector/general/table/index.js:176
 msgid "Enable Responsive Table"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:187
+#: src/blocks/tableBuilder/inspector/general/table/index.js:192
 msgid "Use Top Row as Header"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:201
+#: src/blocks/tableBuilder/inspector/general/table/index.js:206
 msgid "Enable Stack Table"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:233
+#: src/blocks/tableBuilder/inspector/general/table/index.js:238
 msgid "Sticky"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:277
+#: src/blocks/tableBuilder/inspector/general/table/index.js:282
 msgid "Preserve Content on Merge"
 msgstr ""
 
@@ -756,19 +840,19 @@ msgid "Custom"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:33
+#: src/blocks-element/table/inspector/index.js:35
 #: src/blocks/tableBuilder/others/tablePlaceholder.js:234
 msgid "Table Styles"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:35
+#: src/blocks-element/table/inspector/index.js:40
 #: src/blocks/tableBuilder/others/tablePlaceholder.js:236
 msgid "Default"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:36
+#: src/blocks-element/table/inspector/index.js:41
 #: src/blocks/tableBuilder/others/tablePlaceholder.js:237
 msgid "Stripes"
 msgstr ""
@@ -780,11 +864,9 @@ msgstr ""
 #: src/blocks-element/elements/inspector/style/textElement/index.js:23
 #: src/blocks-element/elements/inspector/style/titleElement/index.js:28
 #: src/blocks-element/elements/inspector/style/titleElement/index.js:52
-#: src/blocks-element/table/inspector/index.js:72
+#: src/blocks-element/table/inspector/index.js:77
 #: src/blocks/pricingTable/inspector/style/columnStyle/ribbon.js:25
 #: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:45
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:38
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:27
 #: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:46
 #: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:61
 msgid "Color"
@@ -794,14 +876,14 @@ msgstr ""
 #: src/blocks-element/elements/inspector/style/featuresElement/index.js:56
 #: src/blocks-element/elements/inspector/style/listElement/index.js:100
 #: src/blocks-element/elements/inspector/style/textElement/index.js:34
-#: src/blocks-element/table/inspector/index.js:81
+#: src/blocks-element/table/inspector/index.js:86
 #: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:47
 #: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:70
 msgid "Link Color"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:92
+#: src/blocks-element/table/inspector/index.js:97
 msgid "Sticky Background"
 msgstr ""
 
@@ -813,7 +895,7 @@ msgstr ""
 #: src/blocks-element/elements/inspector/style/textElement/index.js:53
 #: src/blocks-element/elements/inspector/style/titleElement/index.js:37
 #: src/blocks-element/elements/inspector/style/titleElement/index.js:61
-#: src/blocks-element/table/inspector/index.js:111
+#: src/blocks-element/table/inspector/index.js:116
 #: src/blocks/pricingTable/inspector/style/columnStyle/ribbon.js:47
 #: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:56
 #: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:36
@@ -853,41 +935,38 @@ msgstr ""
 
 #: build/index.js:1
 #: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:40
-#: src/blocks/prosAndCons/inspector/style/layout/index.js:41
+#: src/blocks/prosAndCons/inspector/style/layout/index.js:43
 #: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:111
 msgid "Sizing"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:66
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:80
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:102
 #: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:121
 msgid "Spacing"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:92
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:114
 #: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:129
 msgid "Alignment"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:36
-#: src/blocks-element/elements/inspector/style/buttonElement/index.js:23
+#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:45
+#: src/blocks-element/elements/inspector/style/buttonElement/index.js:31
 msgid "Styles"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:38
-#: src/blocks-element/elements/inspector/style/buttonElement/index.js:25
+#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:47
+#: src/blocks-element/elements/inspector/style/buttonElement/index.js:33
 msgid "Filled"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:39
-#: src/blocks-element/elements/inspector/style/buttonElement/index.js:26
+#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:48
+#: src/blocks-element/elements/inspector/style/buttonElement/index.js:34
 msgid "Outline"
 msgstr ""
 
@@ -909,30 +988,25 @@ msgid "List Style"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:49
+#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:51
 msgid "Please select Cell to activate custom design"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:92
+#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:97
 msgid "Cell Borders Type"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:94
+#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:100
 #: src/blocks/tableBuilder/others/tablePlaceholder.js:243
 msgid "Collapse"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:95
+#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:101
 #: src/blocks/tableBuilder/others/tablePlaceholder.js:244
 msgid "Separate"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/index.js:67
-msgid "Table"
 msgstr ""
 
 #: build/index.js:1
@@ -972,21 +1046,21 @@ msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/index.js:61
-#: src/blocks/prosAndCons/inspector/advanced/index.js:54
+#: src/blocks/prosAndCons/inspector/advanced/index.js:52
 #: src/blocks/tableBuilder/inspector/advanced/index.js:193
 msgid "Reset Styles"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/index.js:63
-#: src/blocks/prosAndCons/inspector/advanced/index.js:59
+#: src/blocks/prosAndCons/inspector/advanced/index.js:57
 #: src/blocks/tableBuilder/inspector/advanced/index.js:198
 msgid "Reset All Styles"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/index.js:67
-#: src/blocks/prosAndCons/inspector/advanced/index.js:63
+#: src/blocks/prosAndCons/inspector/advanced/index.js:61
 #: src/blocks/tableBuilder/inspector/advanced/index.js:202
 msgid "Advanced"
 msgstr ""
@@ -1001,7 +1075,7 @@ msgstr ""
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:85
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:100
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:112
-#: src/blocks/prosAndCons/inspector/advanced/index.js:73
+#: src/blocks/prosAndCons/inspector/advanced/index.js:71
 #: src/blocks/tableBuilder/inspector/advanced/index.js:214
 #: src/blocks/tableBuilder/inspector/advanced/index.js:228
 #: src/blocks/tableBuilder/inspector/advanced/index.js:240
@@ -1134,22 +1208,17 @@ msgid "Preview"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/blockPlaceholder/layout/index.js:120
-msgid "Create New"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/index.js:70
+#: src/common/blockPlaceholder/index.js:51
 msgid "Create a new table or import one of premade template to start building tables for this website."
 msgstr ""
 
 #: build/index.js:1
-#: src/common/blockPlaceholder/index.js:73
+#: src/common/blockPlaceholder/index.js:54
 msgid "Get Started"
 msgstr ""
 
 #: build/index.js:1
-#: src/common/globalSettingsButton.js:15
+#: src/common/globalSettingsButton.js:24
 msgid "Global Settings"
 msgstr ""
 
@@ -1159,9 +1228,8 @@ msgid "Table Builder"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent.js:22
+#: src/blocks-element/elements/inspector/content/titleContent/title.js:22
 #: src/blocks/pricingTable/utils/state.js:46
-#: src/blocks/prosAndCons/inspector/general/layout/index.js:60
 msgid "Title"
 msgstr ""
 
@@ -1237,17 +1305,17 @@ msgid "Ribbon"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent.js:43
+#: src/blocks-element/elements/inspector/content/titleContent/title.js:43
 msgid "Title Tag"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent.js:68
+#: src/blocks-element/elements/inspector/content/titleContent/title.js:68
 msgid "Show Subtitle"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent.js:87
+#: src/blocks-element/elements/inspector/content/titleContent/title.js:87
 msgid "Subtitle"
 msgstr ""
 
@@ -1272,7 +1340,7 @@ msgid "Period"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/content/featuresContent.js:42
+#: src/blocks-element/elements/inspector/content/featuresContent/icon.js:33
 msgid "List Style Type"
 msgstr ""
 
@@ -1313,21 +1381,18 @@ msgid "Ribbon Position"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/index.js:99
+#: src/blocks/pricingTable/inspector/general/column/index.js:101
 msgid "Layout Settings"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/index.js:134
+#: src/blocks/pricingTable/inspector/general/column/index.js:137
 msgid "Selected Column Settings"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:49
+#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:58
 #: src/blocks-element/elements/inspector/style/titleElement/wrapperStyle.js:24
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:22
-#: src/blocks/prosAndCons/inspector/style/box/boxControl/defaultControl.js:26
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:43
 msgid "Wrapper Style"
 msgstr ""
 
@@ -1389,6 +1454,7 @@ msgstr ""
 
 #: build/index.js:1
 #: src/blocks-element/columns/inspector/index.js:22
+#: src/blocks/prosAndCons/inspector/style/box/boxControl/defaultControl.js:26
 msgid "Column Style"
 msgstr ""
 
@@ -1405,6 +1471,11 @@ msgstr ""
 #: build/index.js:1
 #: src/blocks/pricingTable/render.js:72
 msgid "Pricing Table"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/box/column/headerControl.js:60
+msgid "Enter Title..."
 msgstr ""
 
 #: build/index.js:1
@@ -1428,36 +1499,33 @@ msgid "Change alignment"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/index.js:39
-msgid "Pros Title"
+#: src/blocks/prosAndCons/inspector/general/header/titleContent.js:26
+msgid "Enable Titles"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/index.js:47
-msgid "Cons Title"
+#: src/blocks/prosAndCons/inspector/general/header/titleContent.js:41
+msgid "Pros Section Title"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/index.js:47
-#: src/blocks/prosAndCons/inspector/general/header/index.js:57
-msgid "Hide Icon"
+#: src/blocks/prosAndCons/inspector/general/header/titleContent.js:49
+msgid "Cons Section Title"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/index.js:62
-#: src/blocks/prosAndCons/inspector/general/header/index.js:72
-msgid "Pros Icon"
+#: src/blocks/prosAndCons/inspector/general/header/iconContent.js:26
+msgid "Enable Title Icons"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/index.js:71
-#: src/blocks/prosAndCons/inspector/general/header/index.js:81
-msgid "Cons Icon"
+#: src/blocks/prosAndCons/inspector/general/header/iconContent.js:41
+msgid "Pros Title Icon"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/content.js:47
-msgid "Item title"
+#: src/blocks/prosAndCons/inspector/general/header/iconContent.js:50
+msgid "Cons Title Icon"
 msgstr ""
 
 #: build/index.js:1
@@ -1466,13 +1534,53 @@ msgid "Add Item"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/layout/index.js:33
-msgid "Show Vertical Box on Mobile"
+#: src/blocks/prosAndCons/inspector/general/body/iconContent.js:28
+msgid "Enable List Icons"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/layout/index.js:46
+#: src/blocks/prosAndCons/inspector/general/body/iconContent.js:43
+msgid "Pros List Icon"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/body/iconContent.js:52
+msgid "Cons List Icon"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/body/index.js:19
+msgid "Pros List"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/body/index.js:19
+msgid "Enter a Pros item"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/body/index.js:23
+msgid "Cons List"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/body/index.js:23
+msgid "Enter a Cons item"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/layout/index.js:81
 msgid "Enable Schema"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/layout/index.js:96
+msgid "Schema Title"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/general/layout/index.js:98
+msgid "Enter custom title..."
 msgstr ""
 
 #: build/index.js:1
@@ -1486,41 +1594,76 @@ msgid "Cons"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:21
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:22
-msgid "Icon Style"
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:38
+#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:27
+msgid "Text Color"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:35
+#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:43
+msgid "Title Container Style"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:80
+#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:102
+msgid "Padding"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:114
+msgid "Horizontal Align"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:22
+msgid "Title Icon Style"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:24
 #: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:25
 msgid "Size"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:24
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:27
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:34
 #: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:35
-msgid "Gap"
+msgid "Icon Gap"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:22
+msgid "Items Container Style"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:27
+msgid "Item Gap"
+msgstr ""
+
+#: build/index.js:1
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:21
+msgid "Items Icon Style"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/prosAndCons/inspector/style/box/boxCommon/index.js:25
-msgid "Box Gap"
+msgid "Column Gap"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/prosAndCons/inspector/style/box/boxControl/defaultControl.js:31
-msgid "Header & Body Gap"
+msgid "Title & Item Gap"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/advanced/index.js:69
+#: src/blocks/prosAndCons/inspector/advanced/index.js:67
 msgid "Additional CSS Class(ES)"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/render.js:104
+#: src/blocks/prosAndCons/render.js:102
 msgid "Pros and Cons"
 msgstr ""
 
@@ -1615,7 +1758,7 @@ msgstr ""
 #: build/blocks/prosAndCons/block.json
 #: src/blocks/prosAndCons/block.json
 msgctxt "block description"
-msgid "Highlight the benefits and drawbacks of products or services."
+msgid "Highlight the benefits & drawbacks of products or services."
 msgstr ""
 
 #: build/blocks/tableBuilder/block.json
@@ -1651,5 +1794,5 @@ msgstr ""
 #: build/blocks/tableBuilder/block.json
 #: src/blocks/tableBuilder/block.json
 msgctxt "block description"
-msgid "Create fully customizable and responsive tables with drag-and-drop functionality."
+msgid "Create responsive tables with drag-and-drop functionality."
 msgstr ""

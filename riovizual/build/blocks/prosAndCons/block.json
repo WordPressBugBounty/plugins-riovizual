@@ -30,10 +30,6 @@
       "type": "boolean",
       "default": true
     },
-    "isScroll": {
-      "type": "boolean",
-      "default": false
-    },
     "isSchema": {
       "type": "boolean",
       "default": false
@@ -43,10 +39,6 @@
       "default": ""
     },
     "classes": {
-      "type": "string",
-      "default": ""
-    },
-    "layoutName": {
       "type": "string",
       "default": ""
     },

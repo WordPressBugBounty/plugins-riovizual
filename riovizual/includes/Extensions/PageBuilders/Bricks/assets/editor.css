@@ -1,0 +1,33 @@
+.rv-bricks-element-icon{
+    width: 40px;
+    display: inline-block;
+}
+.rv-bricks-element-icon::after {
+	content: "";
+	background-image: url( "https://riovizual.com/wp-content/uploads/2025/05/riovizual-white-logo-icon.png" );
+    /* background-image: url( "https://riovizual.com/wp-content/uploads/2025/05/rio-icon-elementor.png" ); */
+	height: 28px;
+    width: 100%;
+    display: inline-block;
+	padding: 0.2em 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+    position: relative;
+    top: 4px;
+}
+.rv-raw-element{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.rv-bricks-button{
+    background: #fcd75a;
+    color: #000000 !important;
+    padding: 8px 16px;
+    text-decoration: none !important;
+    border-radius: 3px;
+}
+li[data-controlkey="create-table"] {
+    margin-top: 24px;
+}

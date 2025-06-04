@@ -3,7 +3,7 @@ Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas, nazmulasif
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.4
 Tested up to: 6.8
-Stable tag: 2.2.1
+Stable tag: 2.3.0
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -279,6 +279,17 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 6. Pros and Cons Block Settings
 
 == Changelog ==
+
+= 2.3.0 - 04 June 2025 =
+* Introduced: Builder Support - Elementor, Divi, Bricks, Oxygen, Beaver Builder.
+* Added: Support for custom Widgets, Elements, Modules, and Shortcodes to work seamlessly with page builders.
+* Added: Enable Title option in Inspector > General > Header in Pros and Cons.
+* Improved: Inspector Settings Visibility option with responsive control.
+* Improved: * Improved: Updated the settings labels in the Inspector Controls for the Pros and Cons.
+* Improved: Renamed 'Vertical Box on Mobile' to 'Layout Type' and added responsive support for selecting layout types in Pros and Cons.
+* Fixed: Bolcks Settings not working in some Situation in Pros and Cons.
+* Fixed: Equal column height was not being calculated correctly in certain situations in Pricing Table.
+
 
 = 2.2.1 - 27 April 2025 =
 * Added: .pot file for Language Support.

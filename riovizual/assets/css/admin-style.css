@@ -5,3 +5,35 @@
 .rv_noti_dismiss_btn{position: absolute;top: 10px;right: 10px;text-decoration: none;display: inline-block;}
 .rv_noti_dismiss_btn span{font-size: 16px;color: #787c82;}
 
+#toplevel_page_riovizual .wp-submenu li:nth-child(4)::after {
+    content: "";
+    border-bottom: 1px solid rgb(255 255 255 / 0.2);
+    display: block;
+    margin: 4px 0;
+    width: 100%;
+}
+.admin_page_riovizualTables #delete_all, 
+.admin_page_riovizualTables .tablenav.top .alignleft.actions:not(.bulkactions),
+.riovizual_page_riovizualTables .tablenav.top .alignleft.actions:not(.bulkactions) {
+    display: none !important;
+}
+.riovizual-shortcode-field{
+    font-family: monospace;
+    cursor: pointer;
+    width: auto; 
+    background-color: #dddddd;
+    border: none !important;
+    padding: 4px 10px !important;
+    text-align: center;
+}
+.rv-add-new-table-btn{
+    background: #2271b1 !important;
+    color: #fff !important;
+}
+
+.riovizual_page_riovizualTables #wpcontent{
+    margin-left: 140px; 
+}
+.riovizual_page_riovizualTables .wrap{
+    margin: 10px 20px 0 20px;
+}

@@ -1,0 +1,5 @@
+.block-editor-inserter__menu .block-editor-tabbed-sidebar__tab:nth-child(2),
+.block-editor-inserter__menu .block-editor-tabbed-sidebar__tab:nth-child(3){
+    visibility: hidden;
+}
+.editor-visual-editor{background-color: #fff;align-items: start;}
