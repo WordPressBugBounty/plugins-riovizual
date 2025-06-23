@@ -1,7 +1,5 @@
 <?php
 /**
- * Bricks service provider.
- *
  * @package riovizual.
  * @since 2.2.2
  */
@@ -21,7 +19,7 @@ class Settings {
 			add_action( 'wp_ajax_riovizual_divi_preview', [ $this, 'preview' ] );
 		}
 	}
- 
+  
 	public function load_scripts() {
 		wp_enqueue_style( 'riovizual-divi-style', plugins_url( 'assets/editor.css', __FILE__ ), [], RIO_VIZUAL_VERSION, 'all' );
 		wp_enqueue_script( 'rv-divi-loader', RIO_VIZUAL_BUILD_URL . '/divi_extn_frontend.js', array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'lodash' ), RIO_VIZUAL_VERSION );

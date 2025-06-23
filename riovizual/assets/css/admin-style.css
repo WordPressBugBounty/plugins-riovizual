@@ -12,7 +12,7 @@
     margin: 4px 0;
     width: 100%;
 }
-.admin_page_riovizualTables #delete_all, 
+.admin_page_riovizualTables #delete_all,
 .admin_page_riovizualTables .tablenav.top .alignleft.actions:not(.bulkactions),
 .riovizual_page_riovizualTables .tablenav.top .alignleft.actions:not(.bulkactions) {
     display: none !important;
@@ -20,7 +20,7 @@
 .riovizual-shortcode-field{
     font-family: monospace;
     cursor: pointer;
-    width: auto; 
+    width: auto;
     background-color: #dddddd;
     border: none !important;
     padding: 4px 10px !important;
@@ -32,7 +32,7 @@
 }
 
 .riovizual_page_riovizualTables #wpcontent{
-    margin-left: 140px; 
+    margin-left: 140px;
 }
 .riovizual_page_riovizualTables .wrap{
     margin: 10px 20px 0 20px;

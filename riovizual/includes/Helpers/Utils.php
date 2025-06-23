@@ -7,7 +7,7 @@ class Utils {
 	// Plugin paths
 	const FREE_PLUGIN_PATH = 'riovizual/riovizual.php';
 	const PRO_PLUGIN_PATH  = 'riovizual-pro/riovizual-pro.php';
- 
+
 	public static function default_blocks_list() {
 		return [
 			'riovizual/pricingtable',

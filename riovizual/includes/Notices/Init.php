@@ -10,7 +10,7 @@ class Init {
 		(new PluginLinks())->register();
 		(new TablePageNotice())->register();
 	}
-
+ 
 	public function handle_main_notices() {
 		global $pagenow;
 		if ( $pagenow === 'plugins.php' || ( isset($_GET['page']) && $_GET['page'] === 'riovizualTables' ) || ! current_user_can('manage_options') ) return;

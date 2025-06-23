@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: RioVizual 2.2.2\n"
+"Project-Id-Version: RioVizual 2.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/riovizual\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-03T10:29:06+00:00\n"
+"POT-Creation-Date: 2025-06-19T12:33:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: riovizual\n"
@@ -41,14 +41,14 @@ msgstr ""
 #: admin/Admin.php:49
 #: admin/Admin.php:50
 #: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:57
+#: dashboard/components/template/Header.js:56
 msgid "Dashboard"
 msgstr ""
 
 #: admin/Admin.php:57
 #: admin/Admin.php:58
 #: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:58
+#: dashboard/components/template/Header.js:57
 msgid "Blocks"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 #: admin/Admin.php:66
 #: admin/Admin.php:74
 #: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:59
+#: dashboard/components/template/Header.js:58
 msgid "Tables"
 msgstr ""
 
@@ -68,14 +68,14 @@ msgstr ""
 #: admin/Admin.php:83
 #: admin/Admin.php:84
 #: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:61
+#: dashboard/components/template/Header.js:60
 msgid "License"
 msgstr ""
 
 #: admin/Admin.php:92
 #: admin/Admin.php:93
 #: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:62
+#: dashboard/components/template/Header.js:61
 msgid "Free vs Pro"
 msgstr ""
 
@@ -126,6 +126,7 @@ msgstr ""
 
 #: includes/Extensions/PageBuilders/Bricks/Widget.php:55
 #: build/index.js:1
+#: src/blocks/pricingTable/inspector/style/index.js:82
 #: src/blocks/tableBuilder/inspector/style/index.js:67
 msgid "Table"
 msgstr ""
@@ -151,11 +152,11 @@ msgstr ""
 msgid "Select a table from the dropdown. You can also <a href=\"%s\" target=\"_blank\">create a new table here</a>."
 msgstr ""
 
-#: includes/Extensions/PageBuilders/Divi/Settings.php:36
+#: includes/Extensions/PageBuilders/Divi/Settings.php:34
 msgid "RioVizual is the most versatile WordPress table plugin designed for creating comparison tables, pricing tables, and pros & cons boxes directly in the Gutenberg block editor."
 msgstr ""
 
-#: includes/Extensions/PageBuilders/Divi/Settings.php:42
+#: includes/Extensions/PageBuilders/Divi/Settings.php:40
 #: build/index.js:1
 #: src/common/blockPlaceholder/layout/index.js:120
 msgid "Create New"
@@ -256,12 +257,12 @@ msgid "%s item(s) restored."
 msgstr ""
 
 #: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:75
+#: dashboard/components/template/Header.js:72
 msgid "rio vizual logo"
 msgstr ""
 
 #: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:98
+#: dashboard/components/template/Header.js:95
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -584,6 +585,8 @@ msgid "List item"
 msgstr ""
 
 #: build/index.js:1
+#: src/blocks/pricingTable/table/contextMenu/index.js:53
+#: src/blocks/pricingTable/table/contextMenu/index.js:98
 #: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:72
 #: src/blocks/tableBuilder/table/contextMenu/element.js:89
 msgid "Paste Element"
@@ -661,7 +664,7 @@ msgid "Cut Column"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:115
+#: src/blocks/pricingTable/table/contextMenu/index.js:68
 #: src/blocks/tableBuilder/table/contextMenu/element.js:55
 msgid "Duplicate Element"
 msgstr ""
@@ -677,17 +680,19 @@ msgid "Move Element Below"
 msgstr ""
 
 #: build/index.js:1
+#: src/blocks/pricingTable/table/contextMenu/index.js:107
 #: src/blocks/tableBuilder/table/contextMenu/element.js:101
 msgid "Copy Element"
 msgstr ""
 
 #: build/index.js:1
+#: src/blocks/pricingTable/table/contextMenu/index.js:116
 #: src/blocks/tableBuilder/table/contextMenu/element.js:111
 msgid "Cut Element"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:144
+#: src/blocks/pricingTable/table/contextMenu/index.js:127
 #: src/blocks/tableBuilder/table/contextMenu/element.js:125
 msgid "Delete Element"
 msgstr ""
@@ -904,6 +909,15 @@ msgid "Typography"
 msgstr ""
 
 #: build/index.js:1
+#: src/blocks-element/table/inspector/index.js:162
+#: src/blocks/pricingTable/inspector/style/tableStyle/index.js:51
+#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:92
+#: src/blocks/prosAndCons/inspector/style/layout/index.js:61
+#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:129
+msgid "Alignment"
+msgstr ""
+
+#: build/index.js:1
 #: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:51
 msgid "Position"
 msgstr ""
@@ -944,12 +958,6 @@ msgstr ""
 #: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:66
 #: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:121
 msgid "Spacing"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:92
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:129
-msgid "Alignment"
 msgstr ""
 
 #: build/index.js:1
@@ -1025,49 +1033,49 @@ msgid "This will reset styles only."
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:141
+#: src/blocks/tableBuilder/inspector/advanced/index.js:140
 msgid "Plus Extra: Cell"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:147
+#: src/blocks/tableBuilder/inspector/advanced/index.js:146
 msgid "Cell Tag"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:152
+#: src/blocks/tableBuilder/inspector/advanced/index.js:151
 msgid "Header cells"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:160
+#: src/blocks/tableBuilder/inspector/advanced/index.js:159
 msgid "Data cells"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/index.js:61
-#: src/blocks/prosAndCons/inspector/advanced/index.js:52
-#: src/blocks/tableBuilder/inspector/advanced/index.js:193
+#: src/blocks/prosAndCons/inspector/advanced/index.js:51
+#: src/blocks/tableBuilder/inspector/advanced/index.js:192
 msgid "Reset Styles"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/index.js:63
-#: src/blocks/prosAndCons/inspector/advanced/index.js:57
-#: src/blocks/tableBuilder/inspector/advanced/index.js:198
+#: src/blocks/prosAndCons/inspector/advanced/index.js:56
+#: src/blocks/tableBuilder/inspector/advanced/index.js:197
 msgid "Reset All Styles"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/index.js:67
-#: src/blocks/prosAndCons/inspector/advanced/index.js:61
-#: src/blocks/tableBuilder/inspector/advanced/index.js:202
+#: src/blocks/prosAndCons/inspector/advanced/index.js:60
+#: src/blocks/tableBuilder/inspector/advanced/index.js:201
 msgid "Advanced"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:81
-#: src/blocks/tableBuilder/inspector/advanced/index.js:210
+#: src/blocks/tableBuilder/inspector/advanced/index.js:209
 msgid "Additional CSS Class(ES) of selected Element"
 msgstr ""
 
@@ -1075,21 +1083,21 @@ msgstr ""
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:85
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:100
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:112
-#: src/blocks/prosAndCons/inspector/advanced/index.js:71
-#: src/blocks/tableBuilder/inspector/advanced/index.js:214
-#: src/blocks/tableBuilder/inspector/advanced/index.js:228
-#: src/blocks/tableBuilder/inspector/advanced/index.js:240
+#: src/blocks/prosAndCons/inspector/advanced/index.js:70
+#: src/blocks/tableBuilder/inspector/advanced/index.js:213
+#: src/blocks/tableBuilder/inspector/advanced/index.js:227
+#: src/blocks/tableBuilder/inspector/advanced/index.js:239
 msgid "Separate multiple classes with spaces."
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/inspector/advanced/advancedContent.js:96
-#: src/blocks/tableBuilder/inspector/advanced/index.js:224
+#: src/blocks/tableBuilder/inspector/advanced/index.js:223
 msgid "Additional CSS Class(ES) of selected Cell"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:236
+#: src/blocks/tableBuilder/inspector/advanced/index.js:235
 msgid "Additional CSS Class(ES) of Table"
 msgstr ""
 
@@ -1104,66 +1112,43 @@ msgid "Cell Border Types"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/others/boxBlockControl.js:47
-#: src/common/blockTableAlignment.js:22
-msgid "Align Left"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/others/boxBlockControl.js:53
-#: src/common/blockTableAlignment.js:28
-msgid "Align Center"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/others/boxBlockControl.js:59
-#: src/common/blockTableAlignment.js:34
-msgid "Align Right"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockTableAlignment.js:43
-msgid "Change Table Alignment"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:62
+#: src/blocks/tableBuilder/others/tableBlockControl.js:61
 msgid "Insert Row Above"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:68
+#: src/blocks/tableBuilder/others/tableBlockControl.js:67
 msgid "Insert Row Below"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:74
+#: src/blocks/tableBuilder/others/tableBlockControl.js:73
 msgid "Delete Row"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:80
+#: src/blocks/tableBuilder/others/tableBlockControl.js:79
 msgid "Insert Column Left"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:86
+#: src/blocks/tableBuilder/others/tableBlockControl.js:85
 msgid "Insert Column Right"
 msgstr ""
 
 #: build/index.js:1
 #: src/blocks/pricingTable/table/cell/columnControl.js:107
-#: src/blocks/tableBuilder/others/tableBlockControl.js:92
+#: src/blocks/tableBuilder/others/tableBlockControl.js:91
 msgid "Delete Column"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:98
+#: src/blocks/tableBuilder/others/tableBlockControl.js:97
 msgid "Merge Cells"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:104
+#: src/blocks/tableBuilder/others/tableBlockControl.js:103
 msgid "Unmerged Cells"
 msgstr ""
 
@@ -1223,7 +1208,7 @@ msgid "Global Settings"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/tableBuilder/render.js:73
+#: src/blocks/tableBuilder/render.js:72
 msgid "Table Builder"
 msgstr ""
 
@@ -1261,12 +1246,12 @@ msgid "Add Subtitle"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:124
+#: src/blocks/pricingTable/table/contextMenu/index.js:77
 msgid "Move Element Before"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:133
+#: src/blocks/pricingTable/table/contextMenu/index.js:86
 msgid "Move Element After"
 msgstr ""
 
@@ -1300,7 +1285,7 @@ msgstr ""
 #: src/blocks/pricingTable/deprecated.js:620
 #: src/blocks/pricingTable/inspector/general/column/columnContent.js:65
 #: src/blocks/pricingTable/save.js:163
-#: src/blocks/pricingTable/table/cell/index.js:170
+#: src/blocks/pricingTable/table/cell/index.js:172
 msgid "Ribbon"
 msgstr ""
 
@@ -1494,11 +1479,6 @@ msgid "Add"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/others/boxBlockControl.js:75
-msgid "Change alignment"
-msgstr ""
-
-#: build/index.js:1
 #: src/blocks/prosAndCons/inspector/general/header/titleContent.js:26
 msgid "Enable Titles"
 msgstr ""
@@ -1658,12 +1638,12 @@ msgid "Title & Item Gap"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/inspector/advanced/index.js:67
+#: src/blocks/prosAndCons/inspector/advanced/index.js:66
 msgid "Additional CSS Class(ES)"
 msgstr ""
 
 #: build/index.js:1
-#: src/blocks/prosAndCons/render.js:102
+#: src/blocks/prosAndCons/render.js:101
 msgid "Pros and Cons"
 msgstr ""
 

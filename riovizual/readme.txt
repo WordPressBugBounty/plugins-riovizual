@@ -3,7 +3,7 @@ Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas, nazmulasif
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.4
 Tested up to: 6.8
-Stable tag: 2.3.0
+Stable tag: 2.3.1
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -280,6 +280,14 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 
 == Changelog ==
 
+= 2.3.1 - 23 June 2025 =
+* Added: Copy, Cut, and Paste Options for Elements in the Pricing Table.
+* Added: Sizing and Alignment Controls in Inspector > Style > Table for the Pricing Table.
+* Added: Alignment Controls in Inspector > Style > Table/Layout for both Table Builder and Pros & Cons Blocks.
+* Remove: Alignment Support from the Block Control Panel for Table Builder and Pros & Cons Blocks (now available in the Inspector Panel).
+* Fixed: Error when Pasting an Element after Deleting a Copied or Cut Element in Table Builder.
+* Fixed: Style Issues that were not Working Correctly in Certain Situations.
+
 = 2.3.0 - 04 June 2025 =
 * Introduced: Builder Support - Elementor, Divi, Bricks, Oxygen, Beaver Builder.
 * Added: Support for custom Widgets, Elements, Modules, and Shortcodes to work seamlessly with page builders.
@@ -289,7 +297,6 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Improved: Renamed 'Vertical Box on Mobile' to 'Layout Type' and added responsive support for selecting layout types in Pros and Cons.
 * Fixed: Bolcks Settings not working in some Situation in Pros and Cons.
 * Fixed: Equal column height was not being calculated correctly in certain situations in Pricing Table.
-
 
 = 2.2.1 - 27 April 2025 =
 * Added: .pot file for Language Support.

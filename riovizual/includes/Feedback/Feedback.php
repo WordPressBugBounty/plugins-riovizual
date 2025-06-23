@@ -4,7 +4,7 @@ namespace RioVizual\Feedback;
 use RioVizual\Helpers\Utils;
 
 class Feedback {
-	
+
 	public function __construct() {
         add_action( 'admin_footer', [ $this, 'rio_viz_feedback_modal'] );
         add_action( 'wp_ajax_deactivate_plugin', [ $this, 'rio_viz_feedback_deactivate_plugin_callback' ] );
@@ -12,7 +12,7 @@ class Feedback {
 
     public function rio_viz_feedback_modal() {
         global $pagenow;
-    
+
         // Check if we are on the plugins.php page
         if ( $pagenow == 'plugins.php' ) {
             $this->feedback_html_content(); // Call the function that contains modal HTML
@@ -21,7 +21,7 @@ class Feedback {
 
     /*
     * Feedback Modal HTML
-    */ 
+    */
     public function feedback_html_content(){
         ?>
             <div class="rv-feedback-overlay" id="rv-feedback-modal" style="display:none">
@@ -50,7 +50,7 @@ class Feedback {
                                     <input type="radio" id="sudden_stop" name="rv-feedback-op" value="I couldn't get the plugin to work">
                                     <label for="sudden_stop"><?php echo esc_html( __( "I couldn't get the plugin to work", 'riovizual' ) ); ?></label>
                                 </div>
-    
+
                                 <div>
                                     <input type="radio" id="found_better_plugin" name="rv-feedback-op" value="I found a better plugin">
                                     <label for="found_better_plugin"><?php echo esc_html( __( 'I found a better plugin', 'riovizual' ) ); ?></label>
@@ -58,12 +58,12 @@ class Feedback {
                                 <div class="better_plugin rv-d-none" id="better_plugin_form">
                                     <input type="text" placeholder="<?php echo esc_attr( __( 'Please share which plugin', 'riovizual' ) ); ?>" name="better_plugin_name" value="" id="better_plugin_input">
                                 </div>
-    
+
                                 <div>
                                     <input type="radio" id="temporary" name="rv-feedback-op" value="It's a temporary deactivation">
                                     <label for="temporary"><?php echo esc_html( __( "It's a temporary deactivation", 'riovizual' ) ); ?></label>
                                 </div>
-    
+
                                 <div>
                                     <input type="radio" id="other" name="rv-feedback-op" value="Other">
                                     <label for="other"><?php echo esc_html( __( 'Other', 'riovizual' ) ); ?></label>
@@ -88,13 +88,13 @@ class Feedback {
 
     /*
     * Trigger Deactivate Plugin
-    */ 
+    */
     public function rio_viz_feedback_deactivate_plugin_callback() {
         if (current_user_can('activate_plugins')) {
             $plugin_file = Utils::FREE_PLUGIN_PATH;
-          
+
             deactivate_plugins($plugin_file);
-    
+
             // Check if the plugin is still active
             if (is_plugin_active($plugin_file)) {
                 wp_send_json_error(array('success' => false, 'data' => 'Plugin deactivation failed.'));
