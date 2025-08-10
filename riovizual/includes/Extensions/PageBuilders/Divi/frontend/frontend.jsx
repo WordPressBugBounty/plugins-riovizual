@@ -12,7 +12,7 @@ class RiovizualSelector extends Component {
 			error: null,
 			isLoading: true,
 			table: null,
-			//style: null,
+			style: null,
 		};
 
 	}
@@ -46,17 +46,17 @@ class RiovizualSelector extends Component {
 			.then( ( res ) => res.json() )
 			.then(
 				( result ) => {
-					// if (result.data.css) {
-					// 	// add style in head
-					// 	const styleElement = document.createElement('style');
-					// 	styleElement.textContent = result.data.css;
-					// 	document.head.appendChild(styleElement);
-					// }
+					if (result.data.css) {
+						// add style in head
+						const styleElement = document.createElement('style');
+						styleElement.textContent = result.data.css;
+						document.head.appendChild(styleElement);
+					}
 
 					this.setState( {
 						isLoading: false,
 						table: result.data.content,
-						//style: result.data.css
+						style: result.data.css
 					} );
 				},
 				( error ) => {

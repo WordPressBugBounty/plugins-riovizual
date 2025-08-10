@@ -96,6 +96,8 @@ class Widget extends Widget_Base{
 	 * @return void|string
 	 */
 	protected function render() {
+		global $riovizual_generated_css;
+
 		$settings = $this->get_settings_for_display();
 
 		if ( ! is_array( $settings ) ) {
@@ -116,6 +118,7 @@ class Widget extends Widget_Base{
 		}
 
 		echo do_shortcode( '[riovizual id="' . $settings['riovizual_table_block'] . '"]' );
+		echo '<style>'.$riovizual_generated_css.'</style>';
 
 	}
 }

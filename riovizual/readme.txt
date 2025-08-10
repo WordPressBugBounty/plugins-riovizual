@@ -3,7 +3,7 @@ Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas, nazmulasif
 Tags: table, block, tables, table builder, pricing table
 Requires at least: 6.4
 Tested up to: 6.8
-Stable tag: 2.3.1
+Stable tag: 2.3.2
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -279,6 +279,10 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 6. Pros and Cons Block Settings
 
 == Changelog ==
+
+= 2.3.2 - 10 August 2025 =
+* Fixed: Plugin conflict with Riovizual and other third-party plugins.
+* Fixed: CSS styling issues in various third-party page builder editors.
 
 = 2.3.1 - 23 June 2025 =
 * Added: Copy, Cut, and Paste Options for Elements in the Pricing Table.

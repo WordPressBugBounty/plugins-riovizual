@@ -56,6 +56,8 @@ class Settings {
 
 	public function preview() { 
 
+		global $riovizual_generated_css;
+
 		check_ajax_referer( 'riovizual_divi_builder', 'nonce' );
 
 		add_action(
@@ -87,6 +89,7 @@ class Settings {
 		wp_send_json_success(
 			[
 				'content' => $shortcode_output,
+				'css'     => $riovizual_generated_css,
 			]
 		);
 	}

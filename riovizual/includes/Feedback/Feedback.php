@@ -90,8 +90,15 @@ class Feedback {
     * Trigger Deactivate Plugin
     */
     public function rio_viz_feedback_deactivate_plugin_callback() {
+
+        // 🔒 Step 1: Nonce check
+        if ( ! isset($_POST['_wpnonce']) || ! wp_verify_nonce($_POST['_wpnonce'], 'deactivate_plugin_nonce') ) {
+            wp_send_json_error([ 'success' => false, 'data' => 'Security check failed.' ]);
+        }
+
         if (current_user_can('activate_plugins')) {
-            $plugin_file = Utils::FREE_PLUGIN_PATH;
+            $full_path  = Utils::FREE_PLUGIN_PATH;
+            $plugin_file = plugin_basename( $full_path );
 
             deactivate_plugins($plugin_file);
 

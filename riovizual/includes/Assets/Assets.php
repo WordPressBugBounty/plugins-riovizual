@@ -48,6 +48,10 @@ class Assets {
 	 */
 	public function rio_feedback_assets(){
 		wp_enqueue_script( 'rio-feedback-core-script', RIO_VIZUAL_ASSETS_URL. '/js/feedback.min.js', array(), RIO_VIZUAL_VERSION, false );
+		wp_localize_script( 'rio-feedback-core-script', 'feedback_ajax_object', array(
+			'ajax_url' => admin_url( 'admin-ajax.php' ),
+			'nonce'    => wp_create_nonce( 'deactivate_plugin_nonce' ),
+		) );
 		wp_enqueue_style( 'rio-feedback-style', RIO_VIZUAL_ASSETS_URL. '/css/feedback.css', array(), RIO_VIZUAL_VERSION );
 	}
 
