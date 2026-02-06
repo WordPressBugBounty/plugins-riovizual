@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit58a2a4ea6ed78ee90e7aab2927062cfe
+class ComposerStaticInitd9c5cc8d02079e24ad41e4ae2cad3229
 {
     public static $prefixLengthsPsr4 = array (
         'R' => 
@@ -27,33 +27,14 @@ class ComposerStaticInit58a2a4ea6ed78ee90e7aab2927062cfe
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'RioVizual\\Admin\\Admin' => __DIR__ . '/../..' . '/admin/Admin.php',
-        'RioVizual\\Assets\\Assets' => __DIR__ . '/../..' . '/includes/Assets/Assets.php',
-        'RioVizual\\Blocks\\Blocks' => __DIR__ . '/../..' . '/includes/Blocks/Blocks.php',
-        'RioVizual\\Core\\Activator' => __DIR__ . '/../..' . '/includes/Core/Activator.php',
-        'RioVizual\\Core\\I18n' => __DIR__ . '/../..' . '/includes/Core/I18n.php',
-        'RioVizual\\Core\\Uninstaller' => __DIR__ . '/../..' . '/includes/Core/Uninstaller.php',
-        'RioVizual\\Feedback\\Feedback' => __DIR__ . '/../..' . '/includes/Feedback/Feedback.php',
-        'RioVizual\\Helpers\\Notice' => __DIR__ . '/../..' . '/includes/Helpers/Notice.php',
-        'RioVizual\\Helpers\\Utils' => __DIR__ . '/../..' . '/includes/Helpers/Utils.php',
-        'RioVizual\\Notices\\Init' => __DIR__ . '/../..' . '/includes/Notices/Init.php',
-        'RioVizual\\Notices\\PluginLinks' => __DIR__ . '/../..' . '/includes/Notices/PluginLinks.php',
-        'RioVizual\\Notices\\ReviewNotice' => __DIR__ . '/../..' . '/includes/Notices/ReviewNotice.php',
-        'RioVizual\\Notices\\TablePageNotice' => __DIR__ . '/../..' . '/includes/Notices/TablePageNotice.php',
-        'RioVizual\\Notices\\UpgradeNotice' => __DIR__ . '/../..' . '/includes/Notices/UpgradeNotice.php',
-        'RioVizual\\PostTypes\\Shortcode' => __DIR__ . '/../..' . '/includes/PostTypes/Shortcode.php',
-        'RioVizual\\PostTypes\\Table' => __DIR__ . '/../..' . '/includes/PostTypes/Table.php',
-        'RioVizual\\PostTypes\\TablesList' => __DIR__ . '/../..' . '/includes/PostTypes/TablesList.php',
-        'RioVizual\\RioVizual' => __DIR__ . '/../..' . '/includes/RioVizual.php',
-        'RioVizual\\StyleProcessor\\StyleProcessor' => __DIR__ . '/../..' . '/includes/StyleProcessor/StyleProcessor.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit58a2a4ea6ed78ee90e7aab2927062cfe::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit58a2a4ea6ed78ee90e7aab2927062cfe::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit58a2a4ea6ed78ee90e7aab2927062cfe::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd9c5cc8d02079e24ad41e4ae2cad3229::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd9c5cc8d02079e24ad41e4ae2cad3229::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitd9c5cc8d02079e24ad41e4ae2cad3229::$classMap;
 
         }, null, ClassLoader::class);
     }

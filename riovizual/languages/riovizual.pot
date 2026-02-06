@@ -2,23 +2,23 @@
 # This file is distributed under the GPL-3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: RioVizual 2.3.1\n"
+"Project-Id-Version: RioVizual 3.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/riovizual\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: WPRIO <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-19T12:33:53+00:00\n"
+"POT-Creation-Date: 2025-12-30T08:51:02+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: riovizual\n"
 
 #. Plugin Name of the plugin
 #: riovizual.php
+#: admin/Admin.php:38
 #: admin/Admin.php:39
-#: admin/Admin.php:40
-#: admin/Admin.php:102
+#: admin/Admin.php:101
 msgid "RioVizual"
 msgstr ""
 
@@ -38,52 +38,46 @@ msgstr ""
 msgid "WPRio"
 msgstr ""
 
+#: admin/Admin.php:48
 #: admin/Admin.php:49
-#: admin/Admin.php:50
-#: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:56
 msgid "Dashboard"
 msgstr ""
 
+#: admin/Admin.php:56
 #: admin/Admin.php:57
-#: admin/Admin.php:58
-#: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:57
 msgid "Blocks"
 msgstr ""
 
+#: admin/Admin.php:64
 #: admin/Admin.php:65
-#: admin/Admin.php:66
-#: admin/Admin.php:74
-#: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:58
+#: admin/Admin.php:73
 msgid "Tables"
 msgstr ""
 
-#: admin/Admin.php:73
+#: admin/Admin.php:72
 #: includes/PostTypes/TablesList.php:82
 msgid "Riovizual Tables"
 msgstr ""
 
+#: admin/Admin.php:82
 #: admin/Admin.php:83
-#: admin/Admin.php:84
-#: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:60
 msgid "License"
 msgstr ""
 
+#: admin/Admin.php:91
 #: admin/Admin.php:92
-#: admin/Admin.php:93
-#: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:61
 msgid "Free vs Pro"
 msgstr ""
 
-#: admin/Admin.php:103
+#: admin/Admin.php:102
 msgid "Get Riovizual Pro"
 msgstr ""
 
-#: includes/Blocks/Blocks.php:48
+#: includes/APIs/Rest/Controllers/DataSourceController.php:25
+msgid "Invalid URL provided."
+msgstr ""
+
+#: includes/Blocks/Blocks.php:49
 #: includes/Extensions/PageBuilders/Bricks/Settings.php:29
 #: includes/Extensions/PageBuilders/Bricks/Widget.php:37
 #: includes/Extensions/PageBuilders/Divi/Module.php:20
@@ -93,8 +87,90 @@ msgstr ""
 msgid "Riovizual"
 msgstr ""
 
+#: includes/Blocks/Renderer/RioVizualBlock.php:53
+msgid "No table data returned from the selected source."
+msgstr ""
+
+#: includes/DataSources/AbstractDataSource.php:29
+msgid "Failed to fetch remote file."
+msgstr ""
+
+#: includes/DataSources/CSV/RemoteCsvDataSource.php:65
+msgid "The CSV data is empty – no content found."
+msgstr ""
+
+#: includes/DataSources/CSV/RemoteCsvDataSource.php:88
+msgid "The CSV file is empty – no rows found."
+msgstr ""
+
+#: includes/DataSources/CSV/RemoteCsvDataSource.php:98
+msgid "The first row (header) is empty or invalid."
+msgstr ""
+
+#: includes/DataSources/DataSourceResolver.php:64
+msgid "Unsupported file type."
+msgstr ""
+
+#: includes/DataSources/Excel/RemoteExcelDataSource.php:24
+msgid "Excel parsing requires PhpSpreadsheet. Please install the dependency or convert the file to CSV."
+msgstr ""
+
+#: includes/DataSources/Excel/RemoteExcelDataSource.php:66
+msgid "Invalid Excel file URL."
+msgstr ""
+
+#: includes/DataSources/Excel/RemoteExcelDataSource.php:83
+msgid "Unable to create a temporary file for Excel parsing."
+msgstr ""
+
+#. translators: %s error message
+#: includes/DataSources/Excel/RemoteExcelDataSource.php:103
+#, php-format
+msgid "Failed to parse Excel file: %s"
+msgstr ""
+
+#: includes/DataSources/Excel/RemoteExcelDataSource.php:115
+msgid "The Excel file is empty – no data available."
+msgstr ""
+
+#: includes/DataSources/Excel/RemoteExcelDataSource.php:126
+msgid "The Excel file is missing a valid header row."
+msgstr ""
+
+#: includes/DataSources/Excel/RemoteExcelDataSource.php:184
+msgid "The Excel file contains no data rows (only headers or empty rows)."
+msgstr ""
+
+#: includes/DataSources/GoogleSheets/PublishedSheetDataSource.php:30
+msgid "Invalid Google Sheet URL."
+msgstr ""
+
+#: includes/DataSources/JSON/RemoteJsonDataSource.php:37
+msgid "Invalid JSON format"
+msgstr ""
+
+#: includes/DataSources/JSON/RemoteJsonDataSource.php:45
+msgid "Invalid input: Please provide data in a tabular array format."
+msgstr ""
+
+#: includes/DataSources/JSON/RemoteJsonDataSource.php:53
+msgid "The JSON file is empty – no data available."
+msgstr ""
+
+#: includes/DataSources/JSON/RemoteJsonDataSource.php:63
+msgid "Unable to determine table headers from JSON data."
+msgstr ""
+
+#: includes/DataSources/JSON/RemoteJsonDataSource.php:76
+msgid "Invalid row format – each item must be an object with key/value pairs."
+msgstr ""
+
+#: includes/DataSources/Query/QueryDataSource.php:22
+msgid "Query data source is not implemented yet."
+msgstr ""
+
 #: includes/Extensions/PageBuilders/BeaverBuilder/includes/frontend.php:19
-#: includes/Extensions/PageBuilders/Elementor/Widget.php:113
+#: includes/Extensions/PageBuilders/Elementor/Widget.php:115
 msgid "Please select the table."
 msgstr ""
 
@@ -125,9 +201,6 @@ msgid "Select a Table"
 msgstr ""
 
 #: includes/Extensions/PageBuilders/Bricks/Widget.php:55
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/style/index.js:82
-#: src/blocks/tableBuilder/inspector/style/index.js:67
 msgid "Table"
 msgstr ""
 
@@ -149,6 +222,7 @@ msgstr ""
 
 #. translators: %s is the URL to create a new table in the admin area.
 #: includes/Extensions/PageBuilders/Divi/Module.php:34
+#, php-format
 msgid "Select a table from the dropdown. You can also <a href=\"%s\" target=\"_blank\">create a new table here</a>."
 msgstr ""
 
@@ -157,8 +231,6 @@ msgid "RioVizual is the most versatile WordPress table plugin designed for creat
 msgstr ""
 
 #: includes/Extensions/PageBuilders/Divi/Settings.php:40
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/index.js:120
 msgid "Create New"
 msgstr ""
 
@@ -221,8 +293,6 @@ msgid "Skip & Deactivate"
 msgstr ""
 
 #: includes/Feedback/Feedback.php:80
-#: build/index.js:1
-#: src/common/modalReset/index.js:48
 msgid "Cancel"
 msgstr ""
 
@@ -231,9 +301,6 @@ msgid "Name"
 msgstr ""
 
 #: includes/PostTypes/Table.php:62
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/content/elementContent.js:76
-#: src/blocks/tableBuilder/utils/state.js:99
 msgid "Shortcode"
 msgstr ""
 
@@ -243,1536 +310,18 @@ msgstr ""
 
 #. translators: %s is the number of items moved to Trash.
 #: includes/PostTypes/TablesList.php:216
+#, php-format
 msgid "%s item(s) moved to Trash."
 msgstr ""
 
 #. translators: %s is the number of items permanently deleted.
 #: includes/PostTypes/TablesList.php:221
+#, php-format
 msgid "%s item(s) permanently deleted."
 msgstr ""
 
 #. translators: %s is the number of items restored from Trash.
 #: includes/PostTypes/TablesList.php:226
+#, php-format
 msgid "%s item(s) restored."
-msgstr ""
-
-#: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:72
-msgid "rio vizual logo"
-msgstr ""
-
-#: admin/dashboard/dashboard.js:1
-#: dashboard/components/template/Header.js:95
-msgid "Upgrade to Pro"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/modalReset/index.js:51
-#: src/component/layout/settingsHeader/index.js:26
-msgid "Reset"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:53
-#: src/component/elements/linekedUnitControl/index.js:130
-#: src/component/elements/linkedRadiusControl/index.js:123
-msgid "Top"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/elements/linekedUnitControl/index.js:144
-#: src/component/elements/linkedRadiusControl/index.js:135
-msgid "Right"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:54
-#: src/component/elements/linekedUnitControl/index.js:157
-#: src/component/elements/linkedRadiusControl/index.js:147
-msgid "Bottom"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/elements/linekedUnitControl/index.js:170
-#: src/component/elements/linkedRadiusControl/index.js:159
-msgid "Left"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/elements/linekedUnitControl/index.js:185
-#: src/component/elements/linkedRadiusControl/index.js:174
-msgid "Unlinked"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/elements/linekedUnitControl/index.js:185
-#: src/component/elements/linkedRadiusControl/index.js:174
-msgid "Linked"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/elements/linkedBorderSpacingControl/index.js:125
-msgid "Horizontal"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/elements/linkedBorderSpacingControl/index.js:138
-msgid "Vertical"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/imageUpload/backgroundImage.js:34
-#: src/component/advanced-settings/media/index.js:111
-msgid "Select or Upload Media"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/imageUpload/backgroundImage.js:43
-msgid "Set image"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/imageUpload/backgroundImage.js:57
-msgid "Remove image"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/imageUpload/backgroundImage.js:140
-msgid "Overlay"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/index.js:110
-msgid "Classic"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/index.js:111
-msgid "Gradient"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:79
-#: src/component/advanced-settings/background/index.js:113
-msgid "Image"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/index.js:132
-msgid "Background Gradient"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/background/index.js:141
-msgid "Background Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/Font/controls/fontControl.js:115
-msgid "Font Family"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/Font/controls/fontControl.js:133
-msgid "Font Weight"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/Font/index.js:167
-msgid "Text Decoration"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/iconList/index.js:109
-msgid "Search icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/media/index.js:82
-msgid "Insert from URL"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/media/index.js:129
-msgid "Set Image"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/media/index.js:146
-msgid "Remove Image"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/media/index.js:160
-msgid "Resolution"
-msgstr ""
-
-#: build/index.js:1
-#: src/component/advanced-settings/media/index.js:179
-msgid "Alt Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/iconContent.js:39
-#: src/common/draggableList/advancedList.js:70
-msgid "Select Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/draggableList/advancedList.js:83
-msgid "Icon Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/draggableList/advancedList.js:128
-msgid "Badge Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/draggableList/advancedList.js:137
-msgid "Badge Background"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/draggableList/advancedList.js:96
-msgid "Set as Default"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/draggableList/advancedList.js:109
-msgid "Text Opacity"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/box/contextMenu/index.js:43
-#: src/blocks/prosAndCons/inspector/general/body/content.js:200
-#: src/common/draggableList/index.js:275
-msgid "Duplicate"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/box/contextMenu/index.js:89
-#: src/blocks/prosAndCons/inspector/general/body/content.js:201
-#: src/common/draggableList/index.js:276
-msgid "Delete"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/draggableList/index.js:342
-msgid "Add New"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/textContent.js:21
-#: src/blocks/tableBuilder/utils/state.js:74
-msgid "Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/utils/state.js:61
-#: src/blocks/tableBuilder/utils/state.js:84
-msgid "Button"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:89
-msgid "List"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/listElement/index.js:44
-#: src/blocks/tableBuilder/utils/state.js:94
-msgid "Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:104
-msgid "Media & Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:110
-msgid "Adv. List"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:116
-msgid "Adv. Button"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:122
-msgid "Dual Button"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/utils/state.js:72
-#: src/blocks/tableBuilder/utils/state.js:128
-msgid "Star Rating"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/utils/state.js:78
-#: src/blocks/tableBuilder/utils/state.js:134
-msgid "Divider"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:143
-msgid "Delete Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:147
-msgid "Delete Image"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:151
-msgid "Delete Button"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:155
-msgid "Delete List"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:159
-msgid "Delete Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/utils/state.js:163
-msgid "Delete Shortcode"
-msgstr ""
-
-#: build/index.js:1
-msgid "You're trying to access a Pro feature. Upgrade now to unlock advanced customization, powerful design options, and exclusive pro elements that make your tables more engaging and conversion-friendly."
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/cell/cellControl.js:123
-msgid "Header"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/cell/cellControl.js:136
-msgid "Body"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/cell/cellControl.js:157
-msgid "Footer"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/default/advancedButtonElem/buttonMain.js:38
-#: src/blocks-element/elements/default/buttonElem.js:52
-#: src/blocks-element/elements/default/richTextElem.js:46
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/buttonContent.js:25
-msgid "Add text"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/mediaLibrary/index.js:85
-msgid "Upload"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/default/listElem.js:122
-msgid "List item"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:53
-#: src/blocks/pricingTable/table/contextMenu/index.js:98
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:72
-#: src/blocks/tableBuilder/table/contextMenu/element.js:89
-msgid "Paste Element"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:108
-msgid "Duplicate Row"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:117
-msgid "Move Row Up"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:126
-msgid "Move Row Down"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:141
-msgid "Paste Row Above"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:151
-msgid "Paste row Below"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:163
-msgid "Copy Row"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:172
-msgid "Cut Row"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/cell/columnControl.js:78
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:227
-msgid "Duplicate Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:236
-msgid "Move Column Left"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:245
-msgid "Move Column Right"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:263
-msgid "Paste Column Left"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:272
-msgid "Paste Column Right"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:284
-msgid "Copy Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/cellMenu.js:293
-msgid "Cut Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:68
-#: src/blocks/tableBuilder/table/contextMenu/element.js:55
-msgid "Duplicate Element"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/element.js:65
-msgid "Move Element Above"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/element.js:75
-msgid "Move Element Below"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:107
-#: src/blocks/tableBuilder/table/contextMenu/element.js:101
-msgid "Copy Element"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:116
-#: src/blocks/tableBuilder/table/contextMenu/element.js:111
-msgid "Cut Element"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:127
-#: src/blocks/tableBuilder/table/contextMenu/element.js:125
-msgid "Delete Element"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/element.js:125
-msgid "Delete All Elements"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/index.js:49
-msgid "Convert to Header Section"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/index.js:61
-#: src/blocks/tableBuilder/table/contextMenu/index.js:85
-msgid "Add to Body Section"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/table/contextMenu/index.js:73
-msgid "Convert to Footer Section"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/textContent.js:33
-msgid "Content Tag"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/imageContent.js:39
-msgid "Link URL"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/attributesContent.js:22
-#: src/blocks-element/elements/inspector/content/buttonContent.js:60
-#: src/blocks-element/elements/inspector/content/iconContent.js:57
-#: src/blocks-element/elements/inspector/content/imageContent.js:49
-msgid "Open in New Tab"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/buttonContent.js:73
-#: src/blocks-element/elements/inspector/content/iconContent.js:73
-#: src/blocks-element/elements/inspector/content/imageContent.js:62
-msgid "Add Nofollow to Link"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/buttonContent.js:22
-#: src/blocks-element/elements/inspector/content/buttonContent.js:39
-msgid "Button Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/buttonContent.js:42
-msgid "Add Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/buttonContent.js:37
-#: src/blocks-element/elements/inspector/content/buttonContent.js:49
-#: src/blocks-element/elements/inspector/content/iconContent.js:47
-msgid "Add URL"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/attributesContent.js:50
-#: src/blocks-element/elements/inspector/content/buttonContent.js:88
-msgid "Enable Auto Text Break"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/content/index.js:48
-msgid "Caption Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:76
-msgid "Equal Cells Width"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:89
-msgid "Convert First Row to Header"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:103
-msgid "Convert Last Row to Footer"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:131
-msgid "Hide Caption"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:143
-msgid "Show Scrollbar"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:148
-msgid "On Large Devices"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:161
-msgid "On Small Devices"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:176
-msgid "Enable Responsive Table"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:192
-msgid "Use Top Row as Header"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:206
-msgid "Enable Stack Table"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:238
-msgid "Sticky"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/general/table/index.js:282
-msgid "Preserve Content on Merge"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/style/styledTabPanel.js:56
-#: src/blocks/tableBuilder/inspector/style/styledTabPanel.js:56
-msgid "Global"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/style/styledTabPanel.js:61
-#: src/blocks/tableBuilder/inspector/style/styledTabPanel.js:61
-msgid "Custom"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:35
-#: src/blocks/tableBuilder/others/tablePlaceholder.js:234
-msgid "Table Styles"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:40
-#: src/blocks/tableBuilder/others/tablePlaceholder.js:236
-msgid "Default"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:41
-#: src/blocks/tableBuilder/others/tablePlaceholder.js:237
-msgid "Stripes"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/featuresElement/index.js:36
-#: src/blocks-element/elements/inspector/style/listElement/index.js:90
-#: src/blocks-element/elements/inspector/style/priceElement/index.js:50
-#: src/blocks-element/elements/inspector/style/textElement/index.js:23
-#: src/blocks-element/elements/inspector/style/titleElement/index.js:28
-#: src/blocks-element/elements/inspector/style/titleElement/index.js:52
-#: src/blocks-element/table/inspector/index.js:77
-#: src/blocks/pricingTable/inspector/style/columnStyle/ribbon.js:25
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:45
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:46
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:61
-msgid "Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/featuresElement/index.js:56
-#: src/blocks-element/elements/inspector/style/listElement/index.js:100
-#: src/blocks-element/elements/inspector/style/textElement/index.js:34
-#: src/blocks-element/table/inspector/index.js:86
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:47
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:70
-msgid "Link Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:97
-msgid "Sticky Background"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/featuresElement/index.js:65
-#: src/blocks-element/elements/inspector/style/listElement/index.js:122
-#: src/blocks-element/elements/inspector/style/priceElement/index.js:59
-#: src/blocks-element/elements/inspector/style/priceElement/priceStyle.js:49
-#: src/blocks-element/elements/inspector/style/textElement/index.js:53
-#: src/blocks-element/elements/inspector/style/titleElement/index.js:37
-#: src/blocks-element/elements/inspector/style/titleElement/index.js:61
-#: src/blocks-element/table/inspector/index.js:116
-#: src/blocks/pricingTable/inspector/style/columnStyle/ribbon.js:47
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:56
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:36
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:87
-msgid "Typography"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/table/inspector/index.js:162
-#: src/blocks/pricingTable/inspector/style/tableStyle/index.js:51
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:92
-#: src/blocks/prosAndCons/inspector/style/layout/index.js:61
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:129
-msgid "Alignment"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:51
-msgid "Position"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:19
-#: src/blocks/pricingTable/inspector/style/columnStyle/ribbon.js:34
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:25
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:46
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:79
-msgid "Background"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:26
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:38
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:59
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:95
-msgid "Border"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:33
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:63
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:85
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:103
-msgid "Box Shadow"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:40
-#: src/blocks/prosAndCons/inspector/style/layout/index.js:43
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:111
-msgid "Sizing"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/shortcodeElement/index.js:66
-#: src/blocks/tableBuilder/inspector/style/captionStyle/index.js:121
-msgid "Spacing"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:45
-#: src/blocks-element/elements/inspector/style/buttonElement/index.js:31
-msgid "Styles"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:47
-#: src/blocks-element/elements/inspector/style/buttonElement/index.js:33
-msgid "Filled"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:48
-#: src/blocks-element/elements/inspector/style/buttonElement/index.js:34
-msgid "Outline"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/listElement/index.js:38
-msgid "List Type"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/featuresElement/index.js:24
-#: src/blocks-element/elements/inspector/style/listElement/index.js:75
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:24
-msgid "Items Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/listElement/index.js:183
-msgid "List Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:51
-msgid "Please select Cell to activate custom design"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:97
-msgid "Cell Borders Type"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:100
-#: src/blocks/tableBuilder/others/tablePlaceholder.js:243
-msgid "Collapse"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/cellStyle/index.js:101
-#: src/blocks/tableBuilder/others/tablePlaceholder.js:244
-msgid "Separate"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/style/index.js:76
-msgid "Caption"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/modalReset/index.js:44
-msgid "Are you sure?"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/modalReset/index.js:45
-msgid "This will reset styles only."
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:140
-msgid "Plus Extra: Cell"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:146
-msgid "Cell Tag"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:151
-msgid "Header cells"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:159
-msgid "Data cells"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/advanced/index.js:61
-#: src/blocks/prosAndCons/inspector/advanced/index.js:51
-#: src/blocks/tableBuilder/inspector/advanced/index.js:192
-msgid "Reset Styles"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/advanced/index.js:63
-#: src/blocks/prosAndCons/inspector/advanced/index.js:56
-#: src/blocks/tableBuilder/inspector/advanced/index.js:197
-msgid "Reset All Styles"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/advanced/index.js:67
-#: src/blocks/prosAndCons/inspector/advanced/index.js:60
-#: src/blocks/tableBuilder/inspector/advanced/index.js:201
-msgid "Advanced"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/advanced/advancedContent.js:81
-#: src/blocks/tableBuilder/inspector/advanced/index.js:209
-msgid "Additional CSS Class(ES) of selected Element"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/advanced/advancedContent.js:85
-#: src/blocks/pricingTable/inspector/advanced/advancedContent.js:100
-#: src/blocks/pricingTable/inspector/advanced/advancedContent.js:112
-#: src/blocks/prosAndCons/inspector/advanced/index.js:70
-#: src/blocks/tableBuilder/inspector/advanced/index.js:213
-#: src/blocks/tableBuilder/inspector/advanced/index.js:227
-#: src/blocks/tableBuilder/inspector/advanced/index.js:239
-msgid "Separate multiple classes with spaces."
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/advanced/advancedContent.js:96
-#: src/blocks/tableBuilder/inspector/advanced/index.js:223
-msgid "Additional CSS Class(ES) of selected Cell"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/inspector/advanced/index.js:235
-msgid "Additional CSS Class(ES) of Table"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tablePlaceholder.js:206
-msgid "Hint: Hold the <code>Ctrl</code> key to select multiple cells and the <code>Shift</code> key to select the range."
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tablePlaceholder.js:241
-msgid "Cell Border Types"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:61
-msgid "Insert Row Above"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:67
-msgid "Insert Row Below"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:73
-msgid "Delete Row"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:79
-msgid "Insert Column Left"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:85
-msgid "Insert Column Right"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/cell/columnControl.js:107
-#: src/blocks/tableBuilder/others/tableBlockControl.js:91
-msgid "Delete Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:97
-msgid "Merge Cells"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/others/tableBlockControl.js:103
-msgid "Unmerged Cells"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/layoutFilter.js:25
-msgid "All"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/layoutFilter.js:30
-msgid "Free"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/layoutFilter.js:35
-msgid "Pro"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/index.js:66
-msgid "create-new"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/index.js:81
-msgid "Build From Scratch"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/index.js:106
-msgid "Import"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/index.js:110
-msgid "Go to Pro"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/layout/index.js:114
-msgid "Preview"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/index.js:51
-msgid "Create a new table or import one of premade template to start building tables for this website."
-msgstr ""
-
-#: build/index.js:1
-#: src/common/blockPlaceholder/index.js:54
-msgid "Get Started"
-msgstr ""
-
-#: build/index.js:1
-#: src/common/globalSettingsButton.js:24
-msgid "Global Settings"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/tableBuilder/render.js:72
-msgid "Table Builder"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent/title.js:22
-#: src/blocks/pricingTable/utils/state.js:46
-msgid "Title"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/priceContent/price.js:57
-#: src/blocks/pricingTable/utils/state.js:51
-msgid "Price"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/default/featuresElem/itemContent.js:50
-#: src/blocks/pricingTable/utils/state.js:56
-msgid "Features"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/utils/state.js:66
-msgid "Media"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/default/titleElem/title.js:31
-msgid "Add Title"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/default/titleElem/subtitle.js:30
-msgid "Add Subtitle"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:77
-msgid "Move Element Before"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/contextMenu/index.js:86
-msgid "Move Element After"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/cell/rowControl.js:60
-msgid "Deselect Row"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/cell/rowControl.js:60
-msgid "Select Row"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/cell/columnControl.js:50
-msgid "Deselect Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/cell/columnControl.js:50
-msgid "Select Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/table/cell/columnControl.js:93
-msgid "Add Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/deprecated.js:194
-#: src/blocks/pricingTable/deprecated.js:620
-#: src/blocks/pricingTable/inspector/general/column/columnContent.js:65
-#: src/blocks/pricingTable/save.js:163
-#: src/blocks/pricingTable/table/cell/index.js:172
-msgid "Ribbon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent/title.js:43
-msgid "Title Tag"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent/title.js:68
-msgid "Show Subtitle"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/titleContent/title.js:87
-msgid "Subtitle"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/priceContent/price.js:22
-msgid "Currency"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/priceContent/price.js:38
-msgid "Currency Placement"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/priceContent/price.js:63
-msgid "99"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/priceContent/period.js:22
-msgid "Period"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/featuresContent/icon.js:33
-msgid "List Style Type"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/attributesContent.js:35
-msgid "Add NoFollow to Link"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/additionalText.js:17
-msgid "Additional Info"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/content/advancedButtonContent/additionalText.js:37
-msgid "Add Info"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/columnContent.js:49
-msgid "Set Ribbon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/columnContent.js:59
-msgid "Ribbon Text"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/columnContent.js:75
-#: src/blocks/pricingTable/inspector/style/columnStyle/ribbon.js:22
-msgid "Ribbon Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/columnContent.js:92
-msgid "Ribbon Position"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/index.js:101
-msgid "Layout Settings"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/general/column/index.js:137
-msgid "Selected Column Settings"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/index.js:58
-#: src/blocks-element/elements/inspector/style/titleElement/wrapperStyle.js:24
-msgid "Wrapper Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/titleElement/index.js:23
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:24
-msgid "Title Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/titleElement/index.js:47
-msgid "Subtitle Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/priceElement/priceStyle.js:24
-msgid "Price Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/priceElement/priceStyle.js:29
-msgid "Price Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/priceElement/priceStyle.js:39
-msgid "Currency Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/priceElement/priceStyle.js:68
-msgid "Currency Size"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/priceElement/index.js:45
-msgid "Period Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/priceElement/index.js:89
-msgid "Price Wrapper Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/buttonStyle.js:22
-msgid "Button Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/elements/inspector/style/advancedButtonElement/infoStyle.js:22
-msgid "Info Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/style/cellStyle/index.js:45
-msgid "Please select Cell"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks-element/columns/inspector/index.js:22
-#: src/blocks/prosAndCons/inspector/style/box/boxControl/defaultControl.js:26
-msgid "Column Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/style/columnStyle/index.js:47
-msgid "Please select Column"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/inspector/advanced/advancedContent.js:108
-msgid "Additional CSS Class(ES) of Pricing Table"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/pricingTable/render.js:72
-msgid "Pricing Table"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/box/column/headerControl.js:60
-msgid "Enter Title..."
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/box/contextMenu/index.js:55
-msgid "Move Above"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/box/contextMenu/index.js:64
-msgid "Move Below"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/box/contextMenu/index.js:77
-msgid "Add"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/titleContent.js:26
-msgid "Enable Titles"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/titleContent.js:41
-msgid "Pros Section Title"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/titleContent.js:49
-msgid "Cons Section Title"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/iconContent.js:26
-msgid "Enable Title Icons"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/iconContent.js:41
-msgid "Pros Title Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/header/iconContent.js:50
-msgid "Cons Title Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/content.js:232
-msgid "Add Item"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/iconContent.js:28
-msgid "Enable List Icons"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/iconContent.js:43
-msgid "Pros List Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/iconContent.js:52
-msgid "Cons List Icon"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/index.js:19
-msgid "Pros List"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/index.js:19
-msgid "Enter a Pros item"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/index.js:23
-msgid "Cons List"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/body/index.js:23
-msgid "Enter a Cons item"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/layout/index.js:81
-msgid "Enable Schema"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/layout/index.js:96
-msgid "Schema Title"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/general/layout/index.js:98
-msgid "Enter custom title..."
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/styledTabPanel.js:16
-msgid "Pros"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/styledTabPanel.js:21
-msgid "Cons"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:38
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:27
-msgid "Text Color"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:43
-msgid "Title Container Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:80
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:102
-msgid "Padding"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/defaultControl.js:114
-msgid "Horizontal Align"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:22
-msgid "Title Icon Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:24
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:25
-msgid "Size"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:34
-#: src/blocks/prosAndCons/inspector/style/header/headerControl/iconControl.js:35
-msgid "Icon Gap"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/defaultControl.js:22
-msgid "Items Container Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/itemsControl.js:27
-msgid "Item Gap"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/body/bodyControl/iconControl.js:21
-msgid "Items Icon Style"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/box/boxCommon/index.js:25
-msgid "Column Gap"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/style/box/boxControl/defaultControl.js:31
-msgid "Title & Item Gap"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/inspector/advanced/index.js:66
-msgid "Additional CSS Class(ES)"
-msgstr ""
-
-#: build/index.js:1
-#: src/blocks/prosAndCons/render.js:101
-msgid "Pros and Cons"
-msgstr ""
-
-#: src/common/deviceControl/dc_backup.js:120
-msgid "Normal"
-msgstr ""
-
-#: src/common/deviceControl/dc_backup.js:121
-msgid "Hover"
-msgstr ""
-
-#: src/common/deviceControl/dc_backup.js:134
-msgid "All Devices"
-msgstr ""
-
-#: build/blocks/pricingTable/block.json
-#: src/blocks/pricingTable/block.json
-msgctxt "block title"
-msgid "Pricing Table"
-msgstr ""
-
-#: build/blocks/pricingTable/block.json
-#: build/blocks/prosAndCons/block.json
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/pricingTable/block.json
-#: src/blocks/prosAndCons/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "table"
-msgstr ""
-
-#: build/blocks/pricingTable/block.json
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/pricingTable/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "pricing table"
-msgstr ""
-
-#: build/blocks/pricingTable/block.json
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/pricingTable/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "builder"
-msgstr ""
-
-#: build/blocks/pricingTable/block.json
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/pricingTable/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "grid"
-msgstr ""
-
-#: build/blocks/pricingTable/block.json
-#: src/blocks/pricingTable/block.json
-msgctxt "block description"
-msgid "Easily compare pricing plans for your products or services."
-msgstr ""
-
-#: build/blocks/prosAndCons/block.json
-#: src/blocks/prosAndCons/block.json
-msgctxt "block title"
-msgid "Pros and Cons"
-msgstr ""
-
-#: build/blocks/prosAndCons/block.json
-#: src/blocks/prosAndCons/block.json
-msgctxt "block keyword"
-msgid "box"
-msgstr ""
-
-#: build/blocks/prosAndCons/block.json
-#: src/blocks/prosAndCons/block.json
-msgctxt "block keyword"
-msgid "pros"
-msgstr ""
-
-#: build/blocks/prosAndCons/block.json
-#: src/blocks/prosAndCons/block.json
-msgctxt "block keyword"
-msgid "cons"
-msgstr ""
-
-#: build/blocks/prosAndCons/block.json
-#: src/blocks/prosAndCons/block.json
-msgctxt "block keyword"
-msgid "pros and cons"
-msgstr ""
-
-#: build/blocks/prosAndCons/block.json
-#: src/blocks/prosAndCons/block.json
-msgctxt "block description"
-msgid "Highlight the benefits & drawbacks of products or services."
-msgstr ""
-
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block title"
-msgid "Table Builder"
-msgstr ""
-
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "cell"
-msgstr ""
-
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "data"
-msgstr ""
-
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "spreadsheet"
-msgstr ""
-
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block keyword"
-msgid "layout"
-msgstr ""
-
-#: build/blocks/tableBuilder/block.json
-#: src/blocks/tableBuilder/block.json
-msgctxt "block description"
-msgid "Create responsive tables with drag-and-drop functionality."
 msgstr ""

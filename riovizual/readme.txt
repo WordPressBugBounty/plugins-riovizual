@@ -1,28 +1,26 @@
-=== Table Block by RioVizual - Comparison Table, Pricing Table, and Pros & Cons Box for Gutenberg ===
+=== RioVizual — Table Blocks for Comparison, Pricing and Pros & Cons ===
 Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas, nazmulasif
-Tags: table, block, tables, table builder, pricing table
+Tags: table, blocks, table builder, comparison table, pricing table
 Requires at least: 6.4
-Tested up to: 6.8
-Stable tag: 2.3.2
+Tested up to: 6.9
+Stable tag: 3.0.0
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Drag and drop Gutenberg table blocks plugin for WordPress to easily create customizable, responsive tables that boost engagement and conversions.
+Drag and drop Gutenberg table blocks plugin for WordPress block editor to easily create customizable, responsive tables that boost engagement and conversions.
 
 == Description ==
 
-### RioVizual - Best WordPress Table Plugin for Gutenberg ###
+RioVizual is the all-in-one Gutenberg table plugin designed for creating comparison tables, pricing tables, and pros & cons boxes directly in the block editor.
 
-**RioVizual** is the most versatile **WordPress table plugin** designed for creating **comparison tables, pricing tables, and pros & cons boxes** directly in the Gutenberg block editor.
-
-This easy-to-use **Gutenberg table plugin** allows you to drag and drop elements to build **customizable, responsive & SEO-friendly tables** with multiple columns and rows. With advanced styling and formatting options, RioVizual helps enhance user engagement and boost conversion.
+It allows you to drag and drop elements to build customizable, responsive & SEO-friendly tables with multiple columns and rows. With advanced styling and formatting options, RioVizual helps enhance user engagement and boost conversion.
 
 [Get Pro](https://riovizual.com/pricing/) | [View Table Builder Demo](https://riovizual.com/blocks/table-builder/demo/) | [View Pricing Table Demo](https://riovizual.com/blocks/pricing-table/demo/) | [View Pros & Cons Demo](https://riovizual.com/blocks/pros-cons/demo/) | [Read Documentation](https://riovizual.com/docs/)
 
-### 🔥RioVizual Gutenberg Blocks (More Coming Soon!) ###
+### RioVizual Blocks (More Coming Soon!) ###
 
-This powerful **WordPress table block plugin** includes three highly customizable Gutenberg blocks:
+RioVizual includes the following highly customizable Gutenberg blocks:
 
 * **Table Builder Block:** Create fully customizable and responsive tables with drag-and-drop functionality in the Gutenberg editor. [(Learn More)](https://riovizual.com/blocks/table-builder/)
 
@@ -30,29 +28,23 @@ This powerful **WordPress table block plugin** includes three highly customizabl
 
 * **Pros & Cons Block:** Highlight the benefits and drawbacks of products or services with attractive pros and cons tables. [(Learn More)](https://riovizual.com/blocks/pros-cons/)
 
-With RioVizual, you can also access a library of **pre-designed table templates**, streamlining the process of creating stunning comparison tables, pricing tables, and pros & cons boxes in the block editor.
+With RioVizual, you can also access a library of pre-designed table templates, streamlining the process of creating stunning comparison tables, pricing tables, and pros & cons boxes in the Gutenberg block editor.
 
-### 💯 Why is RioVizual The Best Table Plugin for WordPress? ###
+### Why You Should Use RioVizual? ###
 
-See the features which are exclusive to the RioVizual plugin and understand why RioVizual is possibly the **Best Table Plugin for WordPress.**
+**Easy Drag-and-Drop Interface:** Create comparison tables, pricing tables, and pros & cons boxes in minutes with Gutenberg.
 
-✅ **Easy Drag-and-Drop Interface:** Create comparison tables, pricing tables, and pros & cons boxes in minutes with Gutenberg.
+**No Coding Skills Needed:** Build professional, customizable tables without any coding knowledge.
 
-✅ **No Coding Skills Needed:** Build professional, customizable tables without any coding knowledge.
+**Extensive Template Library:** Choose from 50+ pre-designed templates for quick table creation.
 
-✅ **Extensive Template Library:** Choose from 50+ professionally designed templates for quick table creation.
+**Fully Responsive Design:** Ensure tables look great on all devices, from desktop to mobile.
 
-✅ **Fully Responsive Design:** Ensure tables look great on all devices, from desktop to mobile.
+**Advanced Customization Options:** Customize fonts, colors, borders, and more to match your website's design.
 
-✅ **Advanced Customization Options:** Customize fonts, colors, borders, and more to match your website’s design.
+**Optimized for Performance and SEO:** Built with clean, optimized code and structured data support.
 
-✅ **Optimized for Performance and SEO:** Boost search visibility with clean, optimized code and structured data support.
-
-### 💎Check Out RioVizual Gutenberg Blocks Features ###
-
-RioVizual offers a range of powerful Gutenberg blocks designed to meet all your table creation needs. Discover the unique features of each block—whether it's building comparison tables, pricing tables, or pros and cons boxes, our blocks provide unmatched customization and flexibility.
-
-#### 🗝️Gutenberg Table Builder Block Includes
+### RioVizual Table Builder Block Includes ###
 
 * Drag-and-drop table builder specifically for the Gutenberg block editor.
 
@@ -84,7 +76,7 @@ RioVizual offers a range of powerful Gutenberg blocks designed to meet all your 
 
 * Extensive border settings: choose from different border types (solid, dotted, dashed, double, groove, ridge, inset, outset) for each cell.
 
-#### 🗝️Gutenberg Pricing Table Block Includes
+### RioVizual Pricing Table Block Includes ###
 
 * 25 pre-designed pricing table templates for quick deployment.
 
@@ -122,7 +114,7 @@ RioVizual offers a range of powerful Gutenberg blocks designed to meet all your 
 
 * 3 more style for ribbon.
 
-#### 🗝️Gutenberg Pros & Cons Block Includes
+### RioVizual Pros & Cons Block Includes ### 
 
 * 13 pre-designed templates to easily create pros and cons boxes.
 
@@ -148,11 +140,11 @@ RioVizual offers a range of powerful Gutenberg blocks designed to meet all your 
 
 * Extra Design Flexibility in Style Options
 
-### 👌Creating Tables in the Gutenberg Block Editor Has Never Been Easier ###
+### Creating Tables in the Gutenberg Block Editor Has Never Been Easier ###
 
 Creating tables like comparison tables, pricing tables, and pros & cons tables with a WordPress table plugin has never been easier. With RioVizual, it only takes 4 simple steps:
 
-* **Step 1 - Add the RioVizual Block**
+* **Step 1 - Add a RioVizual Block**
 
 To insert a table into a WordPress post or page, simply add the desired RioVizual block from the Gutenberg block editor.
 
@@ -162,23 +154,23 @@ Choose to create a table from scratch or use one of the pre-made layouts by ente
 
 * **Step 3 - Customize Your Table**
 
-Customize the table’s columns, colors, fonts, and other settings to match your design preferences. Make adjustments as needed to create a table that perfectly suits your needs.
+Customize the table's columns, colors, fonts, and other settings to match your design preferences. Make adjustments as needed to create a table that perfectly suits your needs.
 
 * **Step 4 - Publish Your Table**
 
 Once you're satisfied with the table's design, click "Publish" or "Update" to make it live on your post or page.
 
-== 🎓Helpful Resources ==
-🔰 [How to Create a Comparison Table in WordPress Gutenberg Block Editor?](https://riovizual.com/how-to-create-table-in-wordpress/)
-🔰 [How to Create a Pricing Table in WordPress Gutenberg Block Editor?](https://riovizual.com/how-to-create-pricing-table-in-wordpress/)
-🔰 [How to Create a Pros & Cons Table in WordPress Gutenberg Block Editor?](https://riovizual.com/how-to-create-pros-cons-table-in-wordpress/)
+== Helpful Resources ==
+* [How to Create a Comparison Table in WordPress Gutenberg Block Editor?](https://riovizual.com/how-to-create-table-in-wordpress/)
+* [How to Create a Pricing Table in WordPress Gutenberg Block Editor?](https://riovizual.com/how-to-create-pricing-table-in-wordpress/)
+* [How to Create a Pros & Cons Table in WordPress Gutenberg Block Editor?](https://riovizual.com/how-to-create-pros-cons-table-in-wordpress/)
 
-== 💝 Love RioVizual?==
+== Love RioVizual?==
 
-⭐️ [Rate Us on WordPress](https://wordpress.org/support/plugin/riovizual/reviews/#new-post)
-👥 [Join RioVizual Users Community](https://facebook.com/groups/riovizual/)
-🌐 [Visit RioVizual Website](https://riovizual.com)
-👍 [Follow RioVizual on Facebook](https://facebook.com/riovizual)
+* [Rate Us on WordPress](https://wordpress.org/support/plugin/riovizual/reviews/#new-post)
+* [Join RioVizual Users Community](https://facebook.com/groups/riovizual/)
+* [Visit RioVizual Website](https://riovizual.com)
+* [Follow RioVizual on Facebook](https://facebook.com/riovizual)
 
 == Installation ==
 
@@ -195,7 +187,7 @@ Installing the RioVizual plugin is quick and easy. Follow these steps:
 
 = Who should use RioVizual? =
 
-RioVizual is perfect for bloggers, eCommerce store owners, niche site creators, affiliate marketers, business owners, or any WordPress website owner. If you aim to increase conversions, RioVizual is the WordPress table plugin you need.
+RioVizual is suitable for bloggers, eCommerce store owners, niche site creators, affiliate marketers, business owners, or any WordPress website owner. If you aim to increase conversions, RioVizual is the WordPress table plugin you need.
 
 = What are the requirements to use RioVizual? =
 
@@ -207,7 +199,7 @@ Absolutely not! RioVizual's code is optimized for maximum performance. Using Rio
 
 = Is RioVizual compatible with all WordPress themes and plugins? =
 
-Yes, RioVizual is designed to be fully compatible with most WordPress themes and plugins. However, if you experience any conflicts, please contact our support team, and we’ll help resolve the issue.
+Yes, RioVizual is designed to be fully compatible with most WordPress themes and plugins. However, if you experience any conflicts, please contact our support team, and we'll help resolve the issue.
 
 = Can I add formatting to my table? =
 
@@ -241,13 +233,6 @@ We are currently working on adding data table and product table features to RioV
 
 Yes, RioVizual fully supports RTL languages, making it a great choice for multilingual websites.
 
-= How often is RioVizual updated? =
-
-RioVizual is updated every two weeks to ensure compatibility, security, and new features.
-
-= Why is RioVizual better than other WordPress table plugins? =
-
-Unlike other WordPress table plugins, RioVizual focuses on delivering results without bloat. It's reliable, performance-oriented, and comes with exceptional customer support.
 
 = How do I report a bug or request a feature? =
 
@@ -267,7 +252,7 @@ Currently, RioVizual does not support direct migration from other plugins, but t
 
 = I have further questions, how do I contact you? =
 
-Feel free to email us at support@riovizual.com, and we’ll be happy to assist you.
+Feel free to email us at support@riovizual.com, and we'll be happy to assist you.
 
 == Screenshots ==
 
@@ -280,6 +265,43 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 
 == Changelog ==
 
+= 3.0.0 - 05 January 2025 =
+* Introduced: Breadcrumb Navigation in Table Builder Block and Pricing Table Block
+* Introduced: Show / Hide component popup in Style Tabs for all elements
+* Introduced: Link/Unlink Style Settings in Pros and Cons Block for Quick and Easy Design Access
+* Added: Move Column Left/Right Settings in Pricing Table Block
+* Added: Global Style panel access button in block control bar and top of inspector panel for table builder and pricing table
+* Added: New Initial Design template in Pros and Cons Block
+* Added: Table Settings Button in Pros and Cons Block 
+* Added: Icon Rotation Setting
+* Added: Button Size Control Settings
+* Added: Spacing Support for Price in Pricing Table Block
+* Improved: Settings Panel appearance in inspector panel on user click event
+* Improved: Separate Global Style Settings Panel 
+* Improved: New UI for some Settings Components
+* Improved: Bring essential settings on elements general tab for quick design 
+* Improved: Reset Button appearance only with table selection 
+* Improved: Bring Row selection panel with each column for quick access in Pricing Table Block 
+* Improved: New Column Control settings in Pricing Table Block 
+* Improved: Dashboard UI
+* Removed: Global Style Tab from each elements style tab panel
+* Removed: delete and add options from block editor control bar in table builer and pricing table block
+* Removed: Column and Row add/delete options from block editor table settings context menu
+* Removed: Some design settings component from some elements custom style tab panel to bring them upfront
+* Removed: Quick delete icon from column and row selection in table builder
+* Removed: Outline tab, search option, duplicate, delete, export table options from Dashboard Table Create Panel
+* Fixed: Equal Column Height issues on frontend
+* Fixed: Minor bugs in style setting
+
+= 2.3.4 - 17 December 2025 =
+* Improved: Security and PHP coding standards (PHPCS compliance)
+* Improved: Prefixed all classes, functions, and variables to prevent conflicts
+* Improved: Proper escaping of output and dynamic handling of URLs, paths, and plugin version
+* Fixed: Minor bugs and performance issues
+
+= 2.3.3 - 09 December 2025 =
+* Added: Support for WordPress 6.9
+
 = 2.3.2 - 10 August 2025 =
 * Fixed: Plugin conflict with Riovizual and other third-party plugins.
 * Fixed: CSS styling issues in various third-party page builder editors.
@@ -288,7 +310,7 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Added: Copy, Cut, and Paste Options for Elements in the Pricing Table.
 * Added: Sizing and Alignment Controls in Inspector > Style > Table for the Pricing Table.
 * Added: Alignment Controls in Inspector > Style > Table/Layout for both Table Builder and Pros & Cons Blocks.
-* Remove: Alignment Support from the Block Control Panel for Table Builder and Pros & Cons Blocks (now available in the Inspector Panel).
+* Removed: Alignment Support from the Block Control Panel for Table Builder and Pros & Cons Blocks (now available in the Inspector Panel).
 * Fixed: Error when Pasting an Element after Deleting a Copied or Cut Element in Table Builder.
 * Fixed: Style Issues that were not Working Correctly in Certain Situations.
 
@@ -299,7 +321,7 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Improved: Inspector Settings Visibility option with responsive control.
 * Improved: * Improved: Updated the settings labels in the Inspector Controls for the Pros and Cons.
 * Improved: Renamed 'Vertical Box on Mobile' to 'Layout Type' and added responsive support for selecting layout types in Pros and Cons.
-* Fixed: Bolcks Settings not working in some Situation in Pros and Cons.
+* Fixed: Blocks Settings not working in some Situation in Pros and Cons.
 * Fixed: Equal column height was not being calculated correctly in certain situations in Pricing Table.
 
 = 2.2.1 - 27 April 2025 =
@@ -307,20 +329,20 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Improved: UI of Demo Import Section
 * Improved: Inspector Control Main Tab Design.
 * Moved: 'Reset Styles' option to Advanced -> Reset Styles.
-* Drop: Device State Manager from Inspector Control, Added to Inspector Control Main Tab.
+* Removed: Device State Manager from Inspector Control, Added to Inspector Control Main Tab.
 
 = 2.2.0 - 19 April 2025 =
 * Introduced: Plugin Dashboard.
 * Added: Full Compatibility with the Latest Version of WordPress 6.8
 * Added: Element Insert Option from Cell Selection Button in Table Builder and Pricing Table.
 * Improved: Right Click Popup Setting.
-* Improved: Show/Hide Row and Column Selector Settings depand on Select Row/Column Icon in Pricing Table.
+* Improved: Show/Hide Row and Column Selector Settings depend on Select Row/Column Icon in Pricing Table.
 * Improved: Table Placeholder Text when Creating a Table.
 * Improved: Font Awesome Icon Search option.
 * Fixed: Google Font Enqueue issue in Frontend.
 * Fixed: Block Transform Issue when Convert Block Default Table to Table Builder.
-* Drop: Element Duplicate option from Block Control, Only Available in Element Right Click Popup.
-* Drop: Help Note from Style Tab in Table Builder.
+* Removed: Element Duplicate option from Block Control, Only Available in Element Right Click Popup.
+* Removed: Help Note from Style Tab in Table Builder.
 
 = 2.1.7 - 5 March 2025 =
 * Added: Link Color, Padding and Border Support for Features Element in Pricing Table.
@@ -361,13 +383,13 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 = 2.1.0 - 15 September 2024 =
 * Introduced: Pricing Table Block.
 * Improved: Box Shadow Component Settings.
-* Improved: Changed Inspector Control Settings Devider Border Solid to Dashes.
+* Improved: Changed Inspector Control Settings Divider Border Solid to Dashes.
 
 = 2.0.11 - 25 July 2024 =
 * Added: Full Compatibility with the Latest Version of WordPress 6.6
 * Fixed: Call Google Font APIs in IFrame.
 * Fixed: Stripe Table issue when Transform a Table.
-* Drop: Support of Create new List when `Enter` Key Press from List Element.
+* Removed: Support of Create new List when `Enter` Key Press from List Element.
 
 = 2.0.10 - 06 June 2024 =
 * Fixed: JS Error while saving the post.
@@ -376,17 +398,17 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Improved: Show Style Reset Icon when Value Change, Previously Show on Hover.
 
 = 2.0.8 - 25 April 2024 =
-* Fixed: Deprecated issue of Preview Device Type with Wordpress 6.5
+* Fixed: Deprecated issue of Preview Device Type with WordPress 6.5
 * Fixed: Popover z-index issue.
 
 = 2.0.7 - 08 April 2024 =
-* Added: Sticky Row and Column Custom Color in Table Builber.
-* Drop: Duplicate Fonts from Font List.
+* Added: Sticky Row and Column Custom Color in Table Builder.
+* Removed: Duplicate Fonts from Font List.
 
 = 2.0.6 - 02 April 2024 =
 * Changed: `Delete` Icon of Selected Row/Column Selector.
 * Improved: Reduce Text Input Field Height in Inspector > General.
-* Fixed: Fatel Error and Warning, when updatting Font.
+* Fixed: Fatal Error and Warning, when updating Font.
 * Fixed: Active Button Z-index issue in Font Settings.
 * Fixed: Selected Cells/Elements State, when devices changes: desktop to Mobile and vice-versa.
 
@@ -399,7 +421,7 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Added: Added Cell Selector to select Cell or Open Right click Cell Menu.
 * Improved: Row/Column Selector Right Click Menu Open.
 * Improved: Default Cells width when scroll on PC and Equal Cells Width is active.
-* Improved: `Cell` Tab Panel Label in `Style` Tab depand on Selected Cells.
+* Improved: `Cell` Tab Panel Label in `Style` Tab depend on Selected Cells.
 * Fixed: Sticky Style Default Color Bug in Responsive Mode.
 * Fixed: Text color Issue from Table Builder when `Text Element` `Content Tag` has changed.
 
@@ -414,9 +436,9 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Improved: Default Table Width when `Vertical Box on Mobile` is Disable of Pros & Cons.
 * Fixed: Sticky Top Row Console Issue of Table Builder.
 * Fixed: Image Overlap Issue for Mobile Devices of Table Builder.
-* Drop: Default Table Background Color from Table Builder.
-* Drop: Default Table Background Color from Pros and Cons.
-* Drop: Default Width of Box from Pros and Cons.
+* Removed: Default Table Background Color from Table Builder.
+* Removed: Default Table Background Color from Pros and Cons.
+* Removed: Default Width of Box from Pros and Cons.
 
 = 2.0.1 - 08 January 2024 =
 * Introduced: Feedback Survey Form.
@@ -443,8 +465,8 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Fixed: Icon Alignment, when Link is Active in Icon Element of Table Builder.
 * Fixed: Elements Link Color Conflict issue with Table Link Color in Table Builder.
 * Fixed: Caption Position issue when Responsive Table Enable.
-* Drop: Depandency of Responsive Break Point in `Use Scrollbar on Large Devices` and `Use Scrollbar on small Devices`.
-* Drop: `Enable Scroll Settings`, Scrollbar added automatically when boxes overflow container.
+* Removed: Depandency of Responsive Break Point in `Use Scrollbar on Large Devices` and `Use Scrollbar on small Devices`.
+* Removed: `Enable Scroll Settings`, Scrollbar added automatically when boxes overflow container.
 
 = 2.0.0 - 06 November 2023 =
 * Introduced: Redesigned UI and Better UX.
@@ -458,13 +480,13 @@ Feel free to email us at support@riovizual.com, and we’ll be happy to assist y
 * Improved: Google Font Api Call when CSS Generate.
 * Fixed: Table Caption Text Decoration Issue.
 * Fixed: JS Console Error in Table Caption.
-* Drop: Style Support of Row Selector in Table Builder.
-* Drop: Style Support of Column Selector in Table Builder.
-* Drop: `Clear Styles` and `Dot` Option from Style Tab for Table Elements.
+* Removed: Style Support of Row Selector in Table Builder.
+* Removed: Style Support of Column Selector in Table Builder.
+* Removed: `Clear Styles` and `Dot` Option from Style Tab for Table Elements.
 
 = 1.1.2 - 13 August 2023 =
 * Added: 1 more Pre-made Table Builder Template.
-* Fixed: Gradient Picker issue with Wordpress 6.3.
+* Fixed: Gradient Picker issue with WordPress 6.3.
 
 = 1.1.1 - 07 August 2023 =
 * Added: Full Compatibility with the Latest Version of WordPress 6.3.

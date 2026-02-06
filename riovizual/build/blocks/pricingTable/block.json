@@ -27,6 +27,10 @@
     "id": {
       "type": "string"
     },
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
     "hasEqualColumn": {
       "type": "boolean",
       "default": false
@@ -64,6 +68,10 @@
       "default": ""
     },
     "styles": {
+      "type": "string",
+      "default": ""
+    },
+    "customCSS": {
       "type": "string",
       "default": ""
     }
