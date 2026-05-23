@@ -15,6 +15,7 @@
     "html": false,
     "anchor": false,
     "customClassName": false,
+    "customCSS": false,
     "align": true
   },
   "textdomain": "riovizual",

@@ -2,8 +2,8 @@
 Contributors: wprio, tableblock, sayedkouser, sifatsaddam, tushardas, nazmulasif
 Tags: table, blocks, table builder, comparison table, pricing table
 Requires at least: 6.4
-Tested up to: 6.9
-Stable tag: 3.0.0
+Tested up to: 7.0
+Stable tag: 3.0.1
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -265,7 +265,10 @@ Feel free to email us at support@riovizual.com, and we'll be happy to assist you
 
 == Changelog ==
 
-= 3.0.0 - 05 January 2025 =
+= 3.0.1 - 23 May 2026 =
+* Added: Support for WordPress Version 7
+
+= 3.0.0 - 05 January 2026 =
 * Introduced: Breadcrumb Navigation in Table Builder Block and Pricing Table Block
 * Introduced: Show / Hide component popup in Style Tabs for all elements
 * Introduced: Link/Unlink Style Settings in Pros and Cons Block for Quick and Easy Design Access
