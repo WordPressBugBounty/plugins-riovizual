@@ -16,9 +16,11 @@ class Shortcode {
             ob_start();
             foreach ( $blocks as $block ) {
                 if ( isset( $block['attrs']['styles'] ) ) {
-                    // StyleProcessor::add_inline_css( 'rv-styles', $block['attrs']['styles'] );
-                    echo '<style>'.$block['attrs']['styles'].'</style>';
-                   // $riovizual_generated_css = $block['attrs']['styles'];
+                    // Strip any tag-breakout attempt before printing CSS.
+                    // Valid CSS never contains "<", so removing it neutralises
+                    // payloads like `</style><script>...`.
+                    $css = str_replace( '<', '', (string) $block['attrs']['styles'] );
+                    echo '<style>' . $css . '</style>';
                 }
                 if ( isset( $block['attrs']['fontFamily'] ) ) {
                     $font_url = 'https://fonts.googleapis.com/css2?' . esc_html($block['attrs']['fontFamily']) . '&display=swap';

@@ -182,7 +182,7 @@ class Admin {
                 'methods'             => 'POST',
                 'callback'            => [$this, 'save_dashboard_blocks'],
                 'permission_callback' => function () {
-                    return current_user_can('edit_posts');
+                    return current_user_can('manage_options');
                 },
             ]
         );
@@ -197,8 +197,28 @@ class Admin {
      */
     public function save_dashboard_blocks($request) {
         $dashboard_data = $request->get_param('dashboard_data');
-        update_option('_rio_vizual_dashboard', $dashboard_data);
+        update_option('_rio_vizual_dashboard', $this->sanitize_dashboard_data($dashboard_data));
         return true;
+    }
+
+    /**
+     * Recursively sanitize dashboard data before persisting.
+     *
+     * @param mixed $data
+     * @return mixed
+     */
+    private function sanitize_dashboard_data($data) {
+        if (is_array($data)) {
+            $clean = [];
+            foreach ($data as $key => $value) {
+                $clean[sanitize_text_field((string) $key)] = $this->sanitize_dashboard_data($value);
+            }
+            return $clean;
+        }
+        if (is_bool($data) || is_int($data) || is_float($data)) {
+            return $data;
+        }
+        return sanitize_text_field((string) $data);
     }
 
     /**

@@ -29,6 +29,9 @@ class Init {
 	public function handle_dismiss_actions() {
 		if ( ! current_user_can('manage_options') || ! isset($_GET['rv_notice_action'], $_GET['notice_type']) ) return;
 
+		// CSRF protection for the dismiss/remind action.
+		if ( ! isset($_GET['_rv_nonce']) || ! wp_verify_nonce( sanitize_text_field( wp_unslash($_GET['_rv_nonce']) ), 'rv_notice_dismiss' ) ) return;
+
 		$action = sanitize_text_field($_GET['rv_notice_action']);
 		$type   = sanitize_text_field($_GET['notice_type']);
 		$user_id = get_current_user_id();

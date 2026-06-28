@@ -173,10 +173,25 @@ class TablesList {
     
         $action = $wp_list_table->current_action();
         if ( ! $action ) return;
-    
+
+        // CSRF protection — WP_Posts_List_Table emits a "bulk-posts" nonce.
+        check_admin_referer( 'bulk-posts' );
+
         $post_ids = array_map('intval', (array) ($_REQUEST['post'] ?? []));
         if ( empty( $post_ids ) ) return;
-    
+
+        // Object-level authorization: only act on RioVizual tables the
+        // current user is actually allowed to delete. Prevents tampering
+        // with arbitrary post IDs (other users' posts/pages).
+        $post_ids = array_values( array_filter( $post_ids, function ( $post_id ) {
+            $post = get_post( $post_id );
+            return $post
+                && $post->post_type === 'wp_block'
+                && get_post_meta( $post_id, '_riovizual_pattern', true )
+                && current_user_can( 'delete_post', $post_id );
+        } ) );
+        if ( empty( $post_ids ) ) return;
+
         switch ( $action ) {
             case 'trash':
                 foreach ( $post_ids as $post_id ) {
@@ -184,26 +199,26 @@ class TablesList {
                 }
                 $sendback = add_query_arg( [ 'trashed' => count( $post_ids ) ], wp_get_referer() );
                 break;
-    
+
             case 'delete':
                 foreach ( $post_ids as $post_id ) {
                     wp_delete_post( $post_id, true );
                 }
                 $sendback = add_query_arg( [ 'deleted' => count( $post_ids ) ], wp_get_referer() );
                 break;
-    
+
             case 'untrash':
                 foreach ( $post_ids as $post_id ) {
                     wp_untrash_post( $post_id );
                 }
                 $sendback = add_query_arg( [ 'untrashed' => count( $post_ids ) ], wp_get_referer() );
                 break;
-    
+
             default:
                 return;
         }
 
-        wp_redirect( $sendback );
+        wp_safe_redirect( $sendback );
         exit;
     }
 

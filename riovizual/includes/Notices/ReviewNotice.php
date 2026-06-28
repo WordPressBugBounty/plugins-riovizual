@@ -9,8 +9,8 @@ class ReviewNotice {
 		if ( $dismissed === 'forever' || (is_numeric($dismissed) && time() < $dismissed) ) return;
 
 		$rate_url   = 'https://wordpress.org/support/plugin/riovizual/reviews/?rate=5';
-		$remind_url = esc_url(add_query_arg(['rv_notice_action' => 'remind_later', 'notice_type' => 'review']));
-		$dismiss_url = esc_url(add_query_arg(['rv_notice_action' => 'dismiss', 'notice_type' => 'review']));
+		$remind_url = esc_url(wp_nonce_url(add_query_arg(['rv_notice_action' => 'remind_later', 'notice_type' => 'review']), 'rv_notice_dismiss', '_rv_nonce'));
+		$dismiss_url = esc_url(wp_nonce_url(add_query_arg(['rv_notice_action' => 'dismiss', 'notice_type' => 'review']), 'rv_notice_dismiss', '_rv_nonce'));
 
 		echo '<div class="notice notice-info"><p><strong>Enjoying RioVizual?</strong> Let the community know!</p>';
 		echo '<p><a href="' . esc_url($rate_url) . '" class="button button-primary" target="_blank">Leave a Review</a> ';

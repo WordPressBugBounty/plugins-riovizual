@@ -117,8 +117,9 @@ class Widget extends Widget_Base{
 			return;
 		}
 
-		echo do_shortcode( '[riovizual id="' . $settings['riovizual_table_block'] . '"]' );
-		echo '<style>'.$riovizual_generated_css.'</style>';
+		echo do_shortcode( '[riovizual id="' . absint( $settings['riovizual_table_block'] ) . '"]' );
+		// Strip tag-breakout characters before printing generated CSS.
+		echo '<style>' . str_replace( '<', '', (string) $riovizual_generated_css ) . '</style>';
 
 	}
 }

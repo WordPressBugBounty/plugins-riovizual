@@ -9,8 +9,8 @@ class UpgradeNotice {
 		if ( $dismissed === 'forever' || (is_numeric($dismissed) && time() < $dismissed) ) return;
 
 		$upgrade_url = 'https://riovizual.com/pricing/';
-		$remind_url  = esc_url(add_query_arg(['rv_notice_action' => 'remind_later', 'notice_type' => 'upgrade']));
-		$dismiss_url = esc_url(add_query_arg(['rv_notice_action' => 'dismiss', 'notice_type' => 'upgrade']));
+		$remind_url  = esc_url(wp_nonce_url(add_query_arg(['rv_notice_action' => 'remind_later', 'notice_type' => 'upgrade']), 'rv_notice_dismiss', '_rv_nonce'));
+		$dismiss_url = esc_url(wp_nonce_url(add_query_arg(['rv_notice_action' => 'dismiss', 'notice_type' => 'upgrade']), 'rv_notice_dismiss', '_rv_nonce'));
 
 		echo '<div class="notice notice-info"><p><strong>Go Pro with RioVizual!</strong> Unlock more features and layouts.</p>';
 		echo '<p><a href="' . esc_url($upgrade_url) . '" class="button button-primary" target="_blank">Upgrade Now</a> ';
